@@ -1,23 +1,23 @@
 <div id="scoreboard">
-	<div id="box">
-        <table>
-            <thead>
-                <tr>
-                    <th>Rang</th>
-                    <th>Joueur</th>
-                    <th>Score</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr ng-reapeat="item in score.scores">
-					<td>{$index +1}</td>
-					<td>{item.name}
-						<div>
-                    		<span ng-repeat="code in item.languages" class="flag"><span ng-class="{'correct': code.correct, 'wrong': code.correct}"></span><img ng-src="images/flags/{code.lang}.png"></span>
-                    	</div>
-					</td>
-					<td>{item.score}</td></tr>
-            </tbody>
-        </table>
-    </div>
+    <h2>Game:
+    At:</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Rang</th>
+                <th>Joueur</th>
+                <th>Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="item in score.scores">
+                <td>{{$index +1}}</td>
+                <td>{{item.name}}
+                    <div>
+                        <span ng-repeat="code in item.languages" class="flag"><span ng-class="{'correct': code.correct, 'wrong': code.correct}"></span><img ng-src="images/flags/{{code.lang}}.png"></span>
+                    </div>
+                </td>
+            <td>{{item.score}}</td></tr>
+        </tbody>
+    </table>
 </div>
