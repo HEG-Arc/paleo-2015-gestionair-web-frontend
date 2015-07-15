@@ -1,0 +1,45 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.content{
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.md-toolbar-tools img{
+  max-height: 60px;
+}
+
+md-card{
+  margin-bottom: 64px;
+}
+
+#logo-arc{
+
+}
+
+#logo-so{
+
+}
+
+footer{
+  background-color: #0098d8;
+  color: #fff;
+}
+
+
+
+@media (max-width: 680px) {
+ #logo-arc{
+    display: none;
+ }
+}
