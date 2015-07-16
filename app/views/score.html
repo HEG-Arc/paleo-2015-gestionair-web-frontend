@@ -7,9 +7,6 @@
 		</div>
     </md-toolbar>
     <md-card-content>
-         <videogular vg-player-ready="ctrl.onPlayerReady($API)" vg-complete="ctrl.onCompletePlay()">
-            <vg-media vg-src="ctrl.config.sources" vg-type="audio"></vg-media>
-        </videogular>
         <p>Reécoute les questions en cliquant dessus.</p>
         <table>
             <thead>
@@ -25,7 +22,7 @@
                     </td>
                     <td><h3>{{player.name}} ({{player.number}})</h3>
                         <div>
-                            <span ng-click="ctrl.playQuestion(answer.question, answer.code)" ng-repeat="answer in player.answers" class="flag">
+                            <span ng-click="audio.playQuestion(answer.question, answer.code)" ng-repeat="answer in player.answers" class="flag">
                                 <md-tooltip md-direction="top">
                                     {{ctrl.api.languageName(answer.code)}}
                                     {{answer.duration}}s
