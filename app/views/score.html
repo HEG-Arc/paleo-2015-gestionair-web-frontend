@@ -1,38 +1,42 @@
-<div id="scoreboard">
-    <h2>Game: {{score.scores.team}}
-    At: {{score.scores.start_time}}</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Rang</th>
-                <th>Joueur</th>
-                <th>Score</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr ng-repeat="player in score.scores.players | orderBy: '-score'">
-                <td>{{$index +1}}</td>
-                <td>{{player.name}} ({{player.number}})
-                    <div>
-                        <span ng-repeat="answer in player.answers" class="flag"><span ng-class="{'correct': answer.correct, 'wrong': answer.correct}"></span><img ng-src="images/flags/{{answer.code}}.png">{{answer.question}} {{answer.duration}}</span>
-                    </div>
-                </td>
-            <td>{{player.score}}</td></tr>
-        </tbody>
-    </table>
- <videogular vg-player-ready="controller.onPlayerReady($API)" vg-complete="controller.onCompleteVideo()"  vg-theme="controller.config.theme.url" class="videogular-container audio">
-        <vg-media vg-src="controller.config.sources" vg-type="audio"></vg-media>
-
-        <vg-controls>
-            <vg-play-pause-button></vg-play-pause-button>
-            <vg-time-display>{{ currentTime | date:'mm:ss' }}</vg-time-display>
-            <vg-scrub-bar>
-                <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
-            </vg-scrub-bar>
-            <vg-time-display>{{ timeLeft | date:'mm:ss' }}</vg-time-display>
-            <vg-volume>
-                <vg-mute-button></vg-mute-button>
-            </vg-volume>
-        </vg-controls>
-    </videogular>
-</div>
+<md-card id="scoreboard">
+    <md-toolbar>
+        <div class="md-toolbar-tools">
+			<h2 class="md-toolbar-item">
+                Equipe: {{ctrl.game.team}} @ {{ctrl.game.start_time | date: 'yyyy-MM-dd HH:mm'}}
+            </h2>
+		</div>
+    </md-toolbar>
+    <md-card-content>
+         <videogular vg-player-ready="ctrl.onPlayerReady($API)" vg-complete="ctrl.onCompletePlay()">
+            <vg-media vg-src="ctrl.config.sources" vg-type="audio"></vg-media>
+        </videogular>
+        <p>Reécoute les questions en cliquant dessus.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th class="text-left">Rang</th>
+                    <th class="text-left">Joueur</th>
+                    <th class="text-right">Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="player in ctrl.game.players | orderBy: '-score'">
+                    <td><h3>{{$index +1}}</h3>
+                    </td>
+                    <td><h3>{{player.name}} ({{player.number}})</h3>
+                        <div>
+                            <span ng-click="ctrl.playQuestion(answer.question, answer.code)" ng-repeat="answer in player.answers" class="flag">
+                                <md-tooltip md-direction="top">
+                                    {{ctrl.api.languageName(answer.code)}}
+                                    {{answer.duration}}s
+                                </md-tooltip>
+                                <md-icon md-svg-src="images/icons/volume-high.svg"></md-icon>
+                                <span ng-class="{'correct': answer.correct, 'wrong': answer.correct==0}"></span><img ng-src="images/flags/{{answer.code}}.png">
+                            </span>
+                        </div>
+                    </td>
+                <td class="text-right"><h3>{{player.score||0}}</h3></td></tr>
+            </tbody>
+        </table>
+    </md-card-content>
+</md-card>

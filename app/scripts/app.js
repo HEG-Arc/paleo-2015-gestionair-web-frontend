@@ -34,7 +34,7 @@ angular
       .when('/score/:code', {
         templateUrl: 'views/score.html',
         controller: 'ScoreCtrl',
-        controllerAs: 'score'
+        controllerAs: 'ctrl'
       })
       .when('/search', {
         templateUrl: 'views/search.html',

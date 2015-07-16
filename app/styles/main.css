@@ -60,6 +60,67 @@ footer{
   padding: 10px;
 }
 
+#scoreboard table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#scoreboard tbody td{
+  vertical-align: top;
+}
+
+#scoreboard tbody td{
+    padding: 10px 30px;
+}
+
+#scoreboard tbody tr:nth-child(odd){
+    background-color: rgb(255,255,255);
+}
+
+#scoreboard tbody tr:nth-child(even){
+    background-color: rgb(200,200,200);
+}
+#scoreboard tbody tr td:nth-child(3){
+    text-align: right;
+    font-weight: bold;
+}
+#scoreboard .flag{
+    padding: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+#scoreboard .flag img{
+    height: 60px;
+}
+
+#scoreboard .flag md-icon{
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+}
+
+#scoreboard .flag .wrong, #scoreboard .flag .correct{
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 20px;
+    right: 5px;
+    z-index: 101;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+#scoreboard .flag .wrong{
+    background-color: #dc1616;
+    background-image:  url('../images/delete102.png');
+}
+
+#scoreboard .flag .correct{
+    background-color: #338800;
+    background-image:  url('../images/checked21.png');
+
+}
 
 .text-left{
   text-align: left;
