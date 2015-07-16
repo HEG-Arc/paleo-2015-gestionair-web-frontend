@@ -23,6 +23,15 @@ md-card{
   margin-bottom: 64px;
 }
 
+.answer.wrong{
+    color: #dc1616;
+}
+
+.answer.correct{
+    color: #338800;
+}
+
+
 #logo-arc{
 
 }

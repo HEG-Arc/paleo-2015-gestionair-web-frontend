@@ -3,6 +3,23 @@
   <md-card-content>
     <h1>Jouer</h1>
     <p>Venez tester vos compétence de gestion et de langues du <strong>20 au 26 juillet 2015 @ PALÉO</strong></p>
+    <h3>Entraînement</h3>
+      <p>Ecouter un appel téléphonique et redirigez la personne vers le bon département.</p>
+      <div layout="row"  layout-align="space-around center">
+        <md-button aria-label="jouer" ng-disabled="audio.gameState=='answering'" class="md-accent md-raised" ng-click="audio.nextQuestion()">Jouer</md-button>
+        <span flex></span>
+        <p class="answer correct" ng-show="audio.gameState=='result' && audio.correct">Correct Bravo!</p>
+        <p class="answer wrong" ng-show="audio.gameState=='result' && !audio.correct">Désolé faux!</p>
+        <span flex></span>
+        <p>Score {{audio.correctCount}} / {{audio.done.length}}</p>
+      </div>
+  <md-list>
+    <md-list-item ng-disabled="audio.gameState!='answering'" ng-repeat-start="dep in main.api.departments | orderBy: dep.number">
+        <md-checkbox aria-label="{{dep.name}}" ng-disabled="audio.gameState!='answering'" ng-change="audio.answerQuestion(dep.number)"  ng-model="dep.answer"></md-checkbox>
+        {{dep.name}}
+    </md-list-item>
+    <md-divider ng-repeat-end ng-if="!$last"></md-divider>
+  </md-list>
   </md-card-content>
 </md-card>
 
@@ -18,11 +35,11 @@
       <md-icon md-svg-src="images/icons/qrcode.svg"></md-icon>
         <input ng-model="main.code" type="number">
       </md-input-container>
-      <md-button class="md-fab" aria-label="Eat cake">
+      <md-button aria-label="afficher code" class="md-fab" aria-label="Eat cake">
         <md-icon md-svg-src="images/icons/magnify.svg"></md-icon>
       </md-button>
     </form>
-    <p>Pas de code? Consulte <md-button href="#/search" class="md-primary">le tableau de résultats</md-button></p>
+    <p>Pas de code? Consulte <md-button aria-label="tableau des résultats" href="#/search" class="md-primary">le tableau de résultats</md-button></p>
   </md-card-content>
 </md-card>
 

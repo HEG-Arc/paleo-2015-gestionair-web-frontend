@@ -30,6 +30,10 @@ angular.module('gestionairApp')
       return $http.get(API_URL + '/games?date=' + date);
     };
 
+    _this.nextQuestion = function(data){
+      return $http.post(API_URL + '/questions', data);
+    };
+
     _this.languageName = function(code){
       for(var i=0; i < _this.languages.length; i++){
         if(_this.languages[i].code === code){
