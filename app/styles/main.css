@@ -35,8 +35,50 @@ footer{
   background-color: #0098d8;
   color: #fff;
 }
+#search-page h2 {
+  margin: 10px;
+}
+
+#teams{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#teams tbody tr{
+  border-bottom: 1px solid #999;
+}
+
+#teams tbody tr:nth-child(odd){
+  background-color: rgba(0, 152, 216, 0.1)
+}
+
+#teams tbody tr:hover{
+  background-color: lightyellow;
+}
+
+#teams tbody td{
+  padding: 10px;
+}
 
 
+.text-left{
+  text-align: left;
+}
+
+.text-right{
+  text-align: right;
+}
+.text-center{
+  text-align: center;
+}
+
+.sort-asc::after{
+  content: '▲'
+}
+
+.sort-desc::after{
+  content: '▼'
+}
 
 @media (max-width: 680px) {
  #logo-arc{

@@ -1,6 +1,6 @@
 <div id="scoreboard">
-    <h2>Game:
-    At:</h2>
+    <h2>Game: {{score.scores.team}}
+    At: {{score.scores.start_time}}</h2>
     <table>
         <thead>
             <tr>
@@ -10,14 +10,29 @@
             </tr>
         </thead>
         <tbody>
-            <tr ng-repeat="item in score.scores">
+            <tr ng-repeat="player in score.scores.players | orderBy: '-score'">
                 <td>{{$index +1}}</td>
-                <td>{{item.name}}
+                <td>{{player.name}} ({{player.number}})
                     <div>
-                        <span ng-repeat="code in item.languages" class="flag"><span ng-class="{'correct': code.correct, 'wrong': code.correct}"></span><img ng-src="images/flags/{{code.lang}}.png"></span>
+                        <span ng-repeat="answer in player.answers" class="flag"><span ng-class="{'correct': answer.correct, 'wrong': answer.correct}"></span><img ng-src="images/flags/{{answer.code}}.png">{{answer.question}} {{answer.duration}}</span>
                     </div>
                 </td>
-            <td>{{item.score}}</td></tr>
+            <td>{{player.score}}</td></tr>
         </tbody>
     </table>
+ <videogular vg-player-ready="controller.onPlayerReady($API)" vg-complete="controller.onCompleteVideo()"  vg-theme="controller.config.theme.url" class="videogular-container audio">
+        <vg-media vg-src="controller.config.sources" vg-type="audio"></vg-media>
+
+        <vg-controls>
+            <vg-play-pause-button></vg-play-pause-button>
+            <vg-time-display>{{ currentTime | date:'mm:ss' }}</vg-time-display>
+            <vg-scrub-bar>
+                <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+            </vg-scrub-bar>
+            <vg-time-display>{{ timeLeft | date:'mm:ss' }}</vg-time-display>
+            <vg-volume>
+                <vg-mute-button></vg-mute-button>
+            </vg-volume>
+        </vg-controls>
+    </videogular>
 </div>

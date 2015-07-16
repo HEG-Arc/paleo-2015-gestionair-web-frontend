@@ -1,0 +1,48 @@
+<md-card id="search-page">
+	<div>
+		<md-toolbar>
+			<div class="md-toolbar-tools">
+				<h2 class="md-toolbar-item">Résultats</h2>
+			</div>
+		</md-toolbar>
+		<md-tabs>
+		  <md-tab label="LUNDI 20" md-on-select="ctrl.fetchDate('2015-07-10')"></md-tab>
+		  <md-tab label="MARDI 21" md-on-select="ctrl.fetchDate('2015-07-13')"></md-tab>
+		  <md-tab label="MERCREDI 22" md-on-select="ctrl.fetchDate('2015-07-14')"></md-tab>
+		  <md-tab label="JEUDI 23" md-on-select="ctrl.fetchDate('2015-07-15')"></md-tab>
+		  <md-tab label="VENDREDI 24" md-on-select="ctrl.fetchDate('2015-07-16')"></md-tab>
+		  <md-tab label="SAMEDI 25" md-on-select="ctrl.fetchDate('2015-07-17')"></md-tab>
+		  <md-tab label="DIMANCHE 26" md-on-select="ctrl.fetchDate('2015-07-18')"></md-tab>
+		</md-tabs>
+	</div>
+	<md-card-content ng-if="ctrl.teams.length > 0">
+		<md-input-container class="md-icon-float" flex>
+      		<label>Equipe</label>
+      		<md-icon md-svg-src="images/icons/magnify.svg"></md-icon>
+        	<input ng-model="ctrl.filter" type="text">
+      	</md-input-container>
+	    <table id="teams">
+	        <thead>
+	            <tr>
+	                <th class="text-left" ng-class="{'sort-asc': ctrl.orderBy == 'start_time' && !ctrl.reverse, 'sort-desc': ctrl.orderBy == 'start_time' && ctrl.reverse}"><md-button ng-click="ctrl.sort('start_time')">Heure</md-button></th>
+	                <th class="text-left" ng-class="{'sort-asc': ctrl.orderBy == 'team' && !ctrl.reverse, 'sort-desc': ctrl.orderBy == 'team' && ctrl.reverse}"><md-button ng-click="ctrl.sort('team')">Equipe</md-button></th>
+					<th class="text-right" ng-class="{'sort-asc': ctrl.orderBy == 'num_players' && !ctrl.reverse, 'sort-desc': ctrl.orderBy == 'num_players' && ctrl.reverse}"><md-button ng-click="ctrl.sort('num_players')">Joueurs</md-button></th>
+	                <th class="text-right" ng-class="{'sort-asc': ctrl.orderBy == 'score_max' && !ctrl.reverse, 'sort-desc': ctrl.orderBy == 'score_max' && ctrl.reverse}"><md-button ng-click="ctrl.sort('score_max')">Score Totaux</md-button></th>
+					<th class="text-right" ng-class="{'sort-asc': ctrl.orderBy == 'score_total' && !ctrl.reverse, 'sort-desc': ctrl.orderBy == 'score_total' && ctrl.reverse}"><md-button ng-click="ctrl.sort('score_total')">Score Max</md-button></th>
+	            </tr>
+	        </thead>
+	        <tbody>
+	            <tr ng-click="ctrl.showDetail(team.id)" ng-repeat="team in ctrl.teams | filter: {'team': ctrl.filter} | orderBy: (ctrl.reverse?'-':'') + ctrl.orderBy">
+	                <td>{{team.start_time | date: 'HH:mm'}}</td>
+	                <td>{{team.team}}</td>
+					<td class="text-right">{{team.num_players}}</td>
+					<td class="text-right">{{team.score_max}}</td>
+					<td class="text-right">{{team.score_total}}</td>
+				</tr>
+	        </tbody>
+	    </table>
+	</md-card-content>
+	<md-card-content ng-if="ctrl.teams.length == 0">
+		<h1 class="text-center">Aucune partie!</h1>
+	</md-card-content>
+</md-card>

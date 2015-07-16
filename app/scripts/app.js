@@ -17,7 +17,12 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'ngMaterial'
+    'ngMaterial',
+    'angulartics',
+    'angulartics.google.analytics',
+    'com.2fdevs.videogular',
+    'com.2fdevs.videogular.plugins.controls',
+    'com.2fdevs.videogular.plugins.analytics'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -30,6 +35,11 @@ angular
         templateUrl: 'views/score.html',
         controller: 'ScoreCtrl',
         controllerAs: 'score'
+      })
+      .when('/search', {
+        templateUrl: 'views/search.html',
+        controller: 'SearchCtrl',
+        controllerAs: 'ctrl'
       })
       .otherwise({
         redirectTo: '/'
