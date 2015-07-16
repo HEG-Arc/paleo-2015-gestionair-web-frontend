@@ -12,7 +12,7 @@ angular.module('gestionairApp')
     var _this = this;
     _this.languages = [];
     _this.departments = [];
-    var API_URL = 'http://192.168.59.103:8081/api';
+    var API_URL = '/api';
 
     $http.get(API_URL + '/departments').success(function(data){
       _this.departments = data;

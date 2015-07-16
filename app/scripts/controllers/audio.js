@@ -49,6 +49,7 @@ angular.module('gestionairApp')
     ctrl.playQuestion = function(question, code){
       ctrl.player.stop();
       var newAudio = question + '-' + code;
+      ctrl.config.plugins.analytics.label = newAudio;
       if(ctrl.currentAudio === newAudio ){
         ctrl.currentAudio = '';
       }else{
@@ -71,16 +72,18 @@ angular.module('gestionairApp')
 
     ctrl.config = {
       sources: [],
-      analytics: {
-        category: "Videogular",
-        label: "Main",
-        events: {
-          ready: true,
-          play: true,
-          pause: true,
-          stop: true,
-          complete: true,
-          progress: 10
+      plugins: {
+        analytics: {
+          category: "Videogular",
+          label: "Main",
+          events: {
+            ready: false,
+            play: true,
+            pause: true,
+            stop: true,
+            complete: true,
+            progress: 10
+          }
         }
       }
     };

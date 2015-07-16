@@ -6,7 +6,7 @@
     <h3>Entraînement</h3>
       <p>Ecouter un appel téléphonique et redirigez la personne vers le bon département.</p>
       <div layout="row"  layout-align="space-around center">
-        <md-button aria-label="jouer" ng-disabled="audio.gameState=='answering'" class="md-accent md-raised" ng-click="audio.nextQuestion()">Jouer</md-button>
+        <md-button  analytics-on aria-label="jouer" ng-disabled="audio.gameState=='answering'" class="md-accent md-raised" ng-click="audio.nextQuestion()">Jouer</md-button>
         <span flex></span>
         <p class="answer correct" ng-show="audio.gameState=='result' && audio.correct">Correct Bravo!</p>
         <p class="answer wrong" ng-show="audio.gameState=='result' && !audio.correct">Désolé faux!</p>
@@ -14,7 +14,7 @@
         <p>Score {{audio.correctCount}} / {{audio.done.length}}</p>
       </div>
   <md-list>
-    <md-list-item ng-disabled="audio.gameState!='answering'" ng-repeat-start="dep in main.api.departments | orderBy: dep.number">
+    <md-list-item analytics-on analytics-event="Answer" analytics-category="Game" analytics-label="{{dep.name}}" ng-disabled="audio.gameState!='answering'" ng-repeat-start="dep in main.api.departments | orderBy: dep.number">
         <md-checkbox aria-label="{{dep.name}}" ng-disabled="audio.gameState!='answering'" ng-change="audio.answerQuestion(dep.number)"  ng-model="dep.answer"></md-checkbox>
         {{dep.name}}
     </md-list-item>
@@ -26,7 +26,7 @@
 <md-card id="score">
   <img src="images/words.gif" alt="words" />
   <md-card-content>
-    <h1>Résultats</h1>
+    <h1 analytics-on="scrollby">Résultats</h1>
     <p>Si tu as participé à l'activité Gestion'air durant le Paléo 2015, retrouve tes résultats en entrant le code figurant sur ton étiquette ou en scannant le QR-Code!</p>
     <form layout="row" ng-submit="main.showCode()">
       <md-input-container class="md-icon-float" flex>
@@ -46,7 +46,7 @@
 <md-card id="about">
   <img src="images/team.png" alt="team" />
   <md-card-content>
-    <h1>A propos</h1>
+    <h1 analytics-on="scrollby">A propos</h1>
   <h2>Equipe</h2>
   <p>L'équipe du projet est composée d'étudiant-e-s des trois filières de la HEG Arc (business law [BL], économie
   d'entreprise [EE] et informatique de gestion [IG]). Elle est accompagnée d'un professeur et d'un assistant.</p>
