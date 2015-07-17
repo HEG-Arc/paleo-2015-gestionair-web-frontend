@@ -33,7 +33,9 @@ angular.module('gestionairApp')
     };
 
     ctrl.answerQuestion = function(answer){
-      ctrl.player.stop();
+      if(ctrl.player.currentState==='play'){
+        ctrl.player.stop();
+      }
       ctrl.gameState = 'evaluating';
       return api.nextQuestion({answer: answer, id: ctrl.currentQuestion.number, done: ctrl.done})
       .success(function(data){
@@ -47,14 +49,16 @@ angular.module('gestionairApp')
     };
 
     ctrl.playQuestion = function(question, code){
-      ctrl.player.stop();
+      if(ctrl.player.currentState==='play'){
+        ctrl.player.stop();
+      }
       var newAudio = question + '-' + code;
       ctrl.config.plugins.analytics.label = newAudio;
       if(ctrl.currentAudio === newAudio ){
         ctrl.currentAudio = '';
       }else{
         ctrl.currentAudio = question + '-' + code;
-        ctrl.config.sources = [{src: 'sounds/questions/' + ctrl.currentAudio + '.mp3', type: "audio/mpeg"}];
+        ctrl.config.sources = [{src: 'sounds/questions/' + ctrl.currentAudio + '.m4a', type: "audio/mp4"}];
         $timeout(function(){
           ctrl.playing = true;
           ctrl.player.play();
@@ -68,6 +72,7 @@ angular.module('gestionairApp')
 
     ctrl.onCompletePlay = function(){
       ctrl.playing = false;
+      ctrl.currentAudio = '';
     };
 
     ctrl.config = {
