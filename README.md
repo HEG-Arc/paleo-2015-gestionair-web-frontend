@@ -1,7 +1,5 @@
-# gestionair
+# gestionair public web frontend
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.12.1.
 
 ## Build & development
 
@@ -9,4 +7,13 @@ Run `grunt` for building and `grunt serve` for preview.
 
 ## Testing
 
-Running `grunt test` will run the unit tests with karma.
+Running `grunt serve:dist` will build and serve the compiled version
+
+## Deploy
+
+1. `grunt build` will build to /dist
+2. `cd dist`
+3. `git add --all .`
+4. `git commit -m 'release...'`
+5. `git push` push to production branch (webhook in github will deploy)
+
