@@ -20,7 +20,7 @@
                 <tr ng-repeat="player in ctrl.game.players | orderBy: '-score'">
                     <td><h3>{{$index +1}}</h3>
                     </td>
-                    <td><h3>{{player.name}} ({{player.number}})</h3>
+                    <td><h3>{{player.name}} #{{player.number}}</h3>
                         <div>
                             <span ng-click="audio.playQuestion(answer.question, answer.code)" ng-repeat="answer in player.answers" class="flag">
                                 <md-tooltip md-direction="top">

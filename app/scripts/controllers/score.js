@@ -8,12 +8,12 @@
  * Controller of the gestionairApp
  */
 angular.module('gestionairApp')
-  .controller('ScoreCtrl', function ($http, api) {
+  .controller('ScoreCtrl', function ($http, api, $routeParams) {
     //need question_id and lang lookup
     //french question text?
     var ctrl = this;
     ctrl.api = api;
-    api.getGame(10).success(function(data){
+    api.getGame($routeParams.code).success(function(data){
       ctrl.game = data;
     });
   });
