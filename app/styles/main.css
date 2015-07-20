@@ -122,7 +122,7 @@ footer{
     left: 0px;
 }
 
-#scoreboard .flag .wrong, #scoreboard .flag .correct{
+#scoreboard .flag .wrong, #scoreboard .flag .correct, #scoreboard .flag .unknown{
     background-size: contain;
     width: 30px;
     height: 30px;
@@ -133,6 +133,7 @@ footer{
     background-repeat: no-repeat;
     background-position: 0 0;
 }
+
 #scoreboard .flag .wrong{
     background-color: #dc1616;
     background-image:  url('../images/delete102.png');
@@ -141,6 +142,12 @@ footer{
 #scoreboard .flag .correct{
     background-color: #338800;
     background-image:  url('../images/checked21.png');
+
+}
+
+#scoreboard .flag .unknown{
+    background-color: #ccc;
+    background-image:  url('../images/Question_mark_512.png');
 
 }
 

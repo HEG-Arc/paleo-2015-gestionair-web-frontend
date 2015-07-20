@@ -28,7 +28,7 @@
                                     {{answer.duration}}s
                                 </md-tooltip>
                                 <md-icon md-svg-src="images/icons/volume-high.svg"></md-icon>
-                                <span ng-class="{'correct': answer.correct, 'wrong': answer.correct==0}"></span><img ng-src="images/flags/{{answer.code}}.png">
+                                <span ng-class="{'correct': answer.correct, 'wrong': answer.correct==0, 'unknown': answer.correct==null}"></span><img ng-src="images/flags/{{answer.code}}.png">
                             </span>
                         </div>
                     </td>
