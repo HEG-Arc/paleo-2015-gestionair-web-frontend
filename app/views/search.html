@@ -40,6 +40,11 @@
 					<td class="text-right">{{team.score_total}}</td>
 				</tr>
 	        </tbody>
+			<tfoot>
+				<tr>
+					<td colspan="5"><p>{{(ctrl.teams |filter: {'team': ctrl.filter}).length }} / {{ctrl.teams.length}} parties</p></td>
+				</tr>
+			</tfoot>
 	    </table>
 	</md-card-content>
 	<md-card-content ng-if="ctrl.teams.length == 0">

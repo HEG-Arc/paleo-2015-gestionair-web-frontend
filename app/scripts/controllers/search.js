@@ -30,7 +30,4 @@ angular.module('gestionairApp')
     ctrl.showDetail = function(id){
       $location.path('/score/' + id);
     };
-
-    //TODO dynamic start day?
-    ctrl.fetchDate('2015-07-13');
   });
