@@ -14,7 +14,8 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/arc/styles/arc.css">
+	<link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
   <body ng-app="gestionairApp" ng-controller="AudioCtrl as audio" layout="column">
@@ -26,23 +27,139 @@
         <vg-media vg-src="audio.config.sources" vg-type="audio"></vg-media>
         <vg-analytics vg-track-info="audio.config.plugins.analytics"></vg-analytics>
     </videogular>
-      <md-toolbar>
-        <div class="md-toolbar-tools">
-          <h1 class="md-toolbar-item md-headlight">Gestion´air</h1>
-          <md-button href="/#/#play">Jouer</md-button>
-          <md-button href="/#/#score">Résultats</md-button>
-          <md-button href="/#/#about">A propos</md-button>
-          <span flex></span>
-          <img src="images/logo_arc.svg" alt="logo he-arc" id="logo-arc" />
-        </div>
-      </md-toolbar>
-      <md-content flex md-scroll-xy id="scrollparent">
-        <div class="content" ng-view="" layout-padding></div>
-        <footer layout-padding layout="row">
-          <span flex></span>
-          <img   analytics-on ng-click="audio.playQuestion(0, 'hesso')" title="allo? allo?" src="images/logo_so.svg" alt="logo hes-so" id="logo-so" />
-        </footer>
-      </md-content>
+  <div id="Tpl2_Racine" style="opacity: 1; pointer-events: auto;"><div id="Tpl2_Racine_Logos"><div id="Tpl2_Racine_Logos_HEArc">&nbsp;</div><div id="Tpl2_Racine_Logos_HESSO" analytics-on ng-click="audio.playQuestion(0, 'hesso')" title="allo? allo?" >&nbsp;</div></div><div id="Tpl2_Racine_Ariane_GES"><div id="Tpl2_Racine_Ariane_Texte"></div></div><div id="Tpl2_Racine_Image"><div style="background-image:url(&#39;http://prod-www.he-arc.ch/sites/prod-www.he-arc.ch/files/business-plan-idee.jpg&#39;);"></div></div><div id="Tpl2_Racine_Titre_GES"><div id="Tpl2_Racine_Titre_Texte">De l'idée au business plan</div></div><div id="Tpl2_Racine_Contenu"><div id="Tpl2_Racine_Contenu_Tbl"><div id="Tpl2_Racine_Contenu_Tbl_Sep_Gauche">&nbsp;</div><div id="Tpl2_Racine_Contenu_Tbl_Body"><div id="Tpl2_Racine_Contenu_Tbl_Body_Texte_GES"><div class="tabs"></div>
+
+  <div ng-view></div>
+
+  <p>Vous avez l’esprit entrepreneurial et vous souhaitez élaborer un business plan et comprendre les différentes étapes préalables&nbsp;?</p>
+
+<p>L’importance et les modalités de la définition d’une stratégie d’entreprise et de marketing ainsi que d’un modèle d’affaires seront au cœur de la formation.</p>
+
+<h1>Public cible</h1>
+
+<ul>
+	<li>Personnes sur le point de lancer leur entreprise, mais qui manquent de connaissances concrètes leur permettant de formaliser leur idée et d’assurer le succès de leur entreprise.&nbsp;</li>
+	<li>Personnes conseillant ou formant des personnes sur le point ou susceptibles de lancer leur propre activité.</li>
+</ul>
+
+<h1>Contenu</h1>
+
+<ul>
+	<li>Présentation et utilisation des principes de base en stratégie d’entreprise et en marketing.</li>
+	<li>Recours à des outils de stratégie tels que la veille, le benchmarking, le FFOM (Forces, Faiblesses, Opportunités et Menaces), le positionnement stratégique et les facteurs clés de succès.</li>
+	<li>Définition d’un modèle d’affaires sur la base de l’approche «Business Model Generation» (Université de Lausanne).</li>
+	<li>Elaboration des documents concrets constituant le business plan, y compris la construction des éléments chiffrés (bilan, compte de résultat, plans d’investissement et de financement).</li>
+	<li>Présentation de pistes de recherche de fonds pour soutenir le lancement de l’activité.</li>
+</ul>
+
+<h1>Intervenant-e-s</h1>
+
+<p>Thierry Bregnard, Professeur HES, HEG Arc.</p>
+
+<p>Pauline Meyer, Experte-Comptable diplômée, Adjointe scientifique, HEG Arc.</p>
+
+<p>La direction de la formation est assurée par Thierry Bregnard. professeur en analyse financière, comptabilité analytique, gestion budgétaire et contrôle de gestion à la HEG Arc.</p>
+
+<h1>Déroulement et lieu</h1>
+
+<p>32 leçons réparties en 8 soirées de 4 périodes, 1 soir par semaine dès octobre, de 18h00 à 21h15.</p>
+
+<p>Le cours se déroule dans les locaux d’AvenirFormation à Delémont.</p>
+
+<h1>Coût et délai</h1>
+
+<p>CHF 950&nbsp;.-</p>
+
+<p>Délai d’inscription : Octobre 2016.</p>
+
+<div style="width:100%;background-color:#008ac9;color:#ffffff;padding-left:10px;padding-top:0px;margin-top:50px;">
+<p><strong><span style="color:#FFFFFF">Formations grand public...</span></strong></p>
+</div>
+
+<div style="width:100%;color:#008ac9;;padding-left:10px;padding-top:0px;">
+<p><span style="color:#008ac9"><a href="http://prod-www.he-arc.ch/gestion/gas" style="color:#008ac9;text-decoration:none;">Généraliste en assurances sociales</a><br>
+<a href="http://prod-www.he-arc.ch/gestion/gcf" style="color:#008ac9;text-decoration:none;">Généraliste en comptabilité et finance</a><br>
+<a href="http://prod-www.he-arc.ch/gestion/gmf" style="color:#008ac9;text-decoration:none;">Généraliste en marchés financiers</a><br>
+<a href="http://prod-www.he-arc.ch/gestion/gmc-1" style="color:#008ac9;text-decoration:none;">Généraliste en marketing et communication I - Les bases</a><br>
+<a href="http://prod-www.he-arc.ch/gestion/gmc-2" style="color:#008ac9;text-decoration:none;">Généraliste en marketing et communication II - Learning by doing</a><br>
+<a href="http://prod-www.he-arc.ch/gestion/gri" style="color:#008ac9;text-decoration:none;">Généraliste en relations interculturelles</a><br>
+<a href="http://prod-www.he-arc.ch/gestion/grh" style="color:#008ac9;text-decoration:none;">Généraliste en ressources humaines</a><br>
+<a href="http://prod-www.he-arc.ch/gestion/gst" style="color:#008ac9;text-decoration:none;">Généraliste en santé au travail</a></span><br>
+<br>
+<span style="color:#008ac9"><strong>De l’idée au business plan</strong><br>
+<a href="http://prod-www.he-arc.ch/gestion/neuromarketing" style="color:#008ac9;text-decoration:none;">Le neuromarketing au service de la vente et de la publicité</a><br>
+<a href="http://prod-www.he-arc.ch/gestion/sas" style="color:#008ac9;text-decoration:none;">Spécialiste en assurances sociales</a><br>
+<a href="http://prod-www.he-arc.ch/gestion/srebas" style="color:#008ac9;text-decoration:none;">Séminaire de révision des examens de brevet en assurances sociales</a><br>
+<a href="http://prod-www.he-arc.ch/gestion/sla-sa" style="color:#008ac9;text-decoration:none;">Spécialiste en Logistique/Achats et Spécialiste en Achats</a><br>
+<a href="http://prod-www.he-arc.ch/gestion/diplome-rh" style="color:#008ac9;text-decoration:none;">Préparation au diplôme fédéral de responsable en ressources humaines</a><br>
+<br>
+<u>Cours de langue</u><br>
+<a href="http://prod-www.he-arc.ch/gestion/bec" style="color:#008ac9;text-decoration:none;">Préparation au diplôme "Business English Certificate (BEC) Vantage"</a><br>
+<a href="http://prod-www.he-arc.ch/gestion/pwd" style="color:#008ac9;text-decoration:none;">Préparation au diplôme "Wirtschaftsdeutsch International"</a><br>
+<a href="http://prod-www.he-arc.ch/gestion/russe-affaires" style="color:#008ac9;text-decoration:none;">Russe des affaires</a><br>
+<a href="http://prod-www.he-arc.ch/gestion/trki" style="color:#008ac9;text-decoration:none;">Préparation aux certificats de langue russe TRKI-1 et TRKI-2</a></span></p>
+</div>
+</div></div><div id="Tpl2_Racine_Contenu_Tbl_Sep_Droite">&nbsp;</div><div id="Tpl2_Racine_Contenu_Tbl_ZoneInfo"><div id="Tpl2_Racine_Contenu_Tbl_ZoneInfo_Texte_GES">
+
+<!-- RIGHT SIDEBAR -->
+
+<p><img alt="" src="SIDE_PIC" style="width:100%"></p>
+<h1>Prochaine session</h1>
+
+<h4>Octobre 2016</h4>
+
+<h4><table><tbody><tr><td id="Tpl2_pdficone_img"><img src="./index_files/logo_lien.png"></td><td id="Tpl2_pdficone_lien"><a href="https://www.ig.he-arc.ch/FormationContinue/" target="_blank">S'inscrire en ligne</a></td></tr></tbody></table></h4>
+
+<h1>Informations pratiques</h1>
+
+<h4><table><tbody><tr><td id="Tpl2_pdficone_img"><img src="./index_files/logo_pdf.png"></td><td id="Tpl2_pdficone_lien"><a href="http://prod-www.he-arc.ch/sites/prod-www.he-arc.ch/files/GES/Grand-public/brochure-formations-continues-grand-public-2015.pdf" target="_blank">Brochure de la formation continue «Grand public» 2015-2016</a></td></tr></tbody></table></h4>
+
+<h4><table><tbody><tr><td id="Tpl2_pdficone_img"><img src="./index_files/logo_lien.png"></td><td id="Tpl2_pdficone_lien"><a href="http://www.avenirformation.ch/" target="_blank">AvenirFormation</a></td></tr></tbody></table></h4>
+
+<h1>Autres formations de la HEG Arc</h1>
+
+<h4><table><tbody><tr><td id="Tpl2_pdficone_img"><img src="./index_files/logo_lien.png"></td><td id="Tpl2_pdficone_lien"><a href="http://prod-www.he-arc.ch/gestion/bachelor-bl">Bachelor en Droit économique</a></td></tr></tbody></table></h4>
+
+<h4><table><tbody><tr><td id="Tpl2_pdficone_img"><img src="./index_files/logo_lien.png"></td><td id="Tpl2_pdficone_lien"><a href="http://prod-www.he-arc.ch/gestion/bachelor-ee">Bachelor en Economie d'entreprise</a></td></tr></tbody></table></h4>
+
+<h4><table><tbody><tr><td id="Tpl2_pdficone_img"><img src="./index_files/logo_lien.png"></td><td id="Tpl2_pdficone_lien"><a href="http://prod-www.he-arc.ch/gestion/bachelor-ig">Bachelor en Informatique de gestion</a></td></tr></tbody></table></h4>
+
+<h4><table><tbody><tr><td id="Tpl2_pdficone_img"><img src="./index_files/logo_lien.png"></td><td id="Tpl2_pdficone_lien"><a href="http://www.myemba.ch/" target="_blank">EMBA du Manager-Leader responsable</a></td></tr></tbody></table></h4>
+
+<h4><table><tbody><tr><td id="Tpl2_pdficone_img"><img src="./index_files/logo_lien.png"></td><td id="Tpl2_pdficone_lien"><a href="http://prod-www.he-arc.ch/gestion/mas-mma">MAS en Marketing Management</a></td></tr></tbody></table></h4>
+
+<h4><table><tbody><tr><td id="Tpl2_pdficone_img"><img src="./index_files/logo_lien.png"></td><td id="Tpl2_pdficone_lien"><a href="http://prod-www.he-arc.ch/gestion/mas-lce">MAS en Lutte contre la criminalité économique</a></td></tr></tbody></table></h4>
+
+<h4><table><tbody><tr><td id="Tpl2_pdficone_img"><img src="./index_files/logo_lien.png"></td><td id="Tpl2_pdficone_lien"><a href="http://prod-www.he-arc.ch/gestion/cas">Certificats d'études avancées (CAS)</a></td></tr></tbody></table></h4>
+
+<h4><table><tbody><tr><td id="Tpl2_pdficone_img"><img src="./index_files/logo_lien.png"></td><td id="Tpl2_pdficone_lien"><a href="http://prod-www.he-arc.ch/gestion/grand-public">Formations grand public</a></td></tr></tbody></table></h4>
+
+<h1>Catalogue HES-SO</h1>
+
+<h4><table><tbody><tr><td id="Tpl2_pdficone_img"><img src="./index_files/logo_lien.png"></td><td id="Tpl2_pdficone_lien"><a href="http://www.hes-so.ch/fr/formation-continue-165.html" target="_blank">Catalogue de la formation continue dans la HES-SO</a></td></tr></tbody></table></h4>
+
+<h1>Des questions?</h1>
+
+<h4>Contactez-nous:</h4>
+
+<h4>FormationContinue.gestion@he-arc.ch<br>
++41 32 930 20 20</h4>
+
+
+<!-- END RIGHT SIDEBAR -->
+
+</div></div></div></div><div id="Tpl2_Racine_BasPage">&nbsp;</div></div><div id="Menu_Icones"><div title="Menu" id="Menu_Icones_Menu">&nbsp;</div><div id="Menu_Icones_Tbl"><ul id="Menu_Icones_Tbl_Wrapper"><li id="Menu_Icones_Tbl_Sep1">&nbsp;</li><li title="Actualités" id="Menu_Icones_Tbl_Actu" onclick="window.location=&#39;http://prod-www.he-arc.ch/news&#39;">&nbsp;</li><li title="Agenda" id="Menu_Icones_Tbl_Agenda" onclick="window.location=&#39;http://prod-www.he-arc.ch/agenda&#39;">&nbsp;</li><li title="Presse" id="Menu_Icones_Tbl_Presse" onclick="window.location=&#39;http://prod-www.he-arc.ch/presse&#39;">&nbsp;</li><li title="Projets" id="Menu_Icones_Tbl_Projets" onclick="window.location=&#39;http://prod-www.he-arc.ch/projets&#39;">&nbsp;</li><li title="Galerie" id="Menu_Icones_Tbl_Galerie" onclick="window.open(&#39;http://gallery.he-arc.ch&#39;, &#39;_blank&#39;)">&nbsp;</li><li title="Contact" id="Menu_Icones_Tbl_Contact" onclick="window.location=&#39;http://prod-www.he-arc.ch/contact&#39;">&nbsp;</li><li title="Recherche" id="Menu_Icones_Tbl_Recherche">&nbsp;</li><li id="Menu_Icones_Tbl_Sep2">&nbsp;</li><li title="Connexion" id="Menu_Icones_Tbl_Connexion">&nbsp;</li><li title="Réseaux sociaux" id="Menu_Icones_Tbl_Social">&nbsp;</li><li id="Menu_Icones_Tbl_Sep3">&nbsp;</li></ul></div></div><div id="Menu_Icones_Social" style="display: none;"><div id="Menu_Icones_Social_Titre"><div id="Menu_Icones_Social_Titre_Close">&nbsp;</div></div><div id="Menu_Icones_Social_Facebook"><div id="Menu_Icones_Social_Facebook_Fleche">&nbsp;</div></div><div id="Menu_Icones_Social_Facebook_Elem" style="display: none;"><a href="https://www.facebook.com/HauteEcoleArc" target="_blank">Facebook HE-Arc</a><br><a href="https://www.facebook.com/hearcingenierie" target="_blank">Facebook Ingénierie</a></div><div id="Menu_Icones_Social_Youtube"><div id="Menu_Icones_Social_Youtube_Fleche">&nbsp;</div></div><div id="Menu_Icones_Social_Youtube_Elem" style="display: none;"><a href="https://www.youtube.com/channel/UCUf3DnubSxPOFts8zy5eRrA" target="_blank">Youtube HE-Arc</a><br><a href="https://www.youtube.com/channel/UCMZSyGnwdNsleklfr1KzAhw" target="_blank">Youtube Ingénierie</a></div></div><div id="Menu_Icones_Connexion" style="display: none;"><div id="Menu_Icones_Connexion_Titre"><div id="Menu_Icones_Connexion_Titre_Close">&nbsp;</div></div><div id="Menu_Icones_Connexion_Intranet"><a href="https://intranet.he-arc.ch/" target="_blank">Intranet</a><br></div><div id="Menu_Icones_Connexion_Webmail"><a href="https://webmail.he-arc.ch/" target="_blank">Webmail</a><br></div></div><div id="Menu_Icones_Recherche" style="display: none;"><div id="Menu_Icones_Recherche_Titre"><div id="Menu_Icones_Recherche_Titre_Close">&nbsp;</div></div><div id="Menu_Icones_Recherche_Site"><form action="http://prod-www.he-arc.ch/gestion/business-plan" method="post" id="search-block-form--2" accept-charset="UTF-8"><div><div class="container-inline">
+      <h2 class="element-invisible">Formulaire de recherche</h2>
+    <div class="form-item form-type-textfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--4">Rechercher </label>
+ <input title="Indiquer les termes à rechercher" type="text" id="edit-search-block-form--4" name="search_block_form" value="" size="15" maxlength="128" class="form-text">
+</div>
+<div class="form-actions form-wrapper" id="edit-actions--2"><input type="submit" id="edit-submit--2" name="op" value="" class="form-submit"></div><input type="hidden" name="form_build_id" value="form-kJYA7nIyQTDihZbP0cBJ7d4MX5j9MTDvqJr0JoMQA-o">
+<input type="hidden" name="form_token" value="43rLUFWDlBybgw-xqFkUeTK_TwmrMD5SwtcDuM22m-s">
+<input type="hidden" name="form_id" value="search_block_form">
+</div>
+</div></form></div><div id="Menu_Icones_Recherche_People"><a href="http://people.he-arc.ch/" target="_blank">Annuaire...</a><br></div></div><div id="Menu_Liens" style="display: none;"><ul class="navigation"><li class="toggleSubMenu" id="section_dg"><a href="">HAUTE ECOLE ARC</a><ul class="subMenu" style="display: none;"><table id="Menu_Tbl_DG"><tbody><tr><td id="Menu_Tbl_Titre">Portrait</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Titre">Formation Ra&amp;D</td></tr><tr><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/la-he-arc&#39;">La HE-Arc</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/toutes-les-formations&#39;">Toutes les formations</td></tr><tr><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/organisation&#39;">Organisation</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/recherche-appliquee&#39;">Ra&amp;D</td></tr><tr><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/emploi&#39;">Emploi</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/projets&#39;">Projets de recherche</td></tr><tr><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/reglementation&#39;">Réglementation</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/publications&#39;">Publications</td></tr><tr><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/publications?type=2&#39;">Brochures</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Elem" onclick="window.open(&#39;http://fablab-neuch.ch/&#39;)">FabLab</td></tr><tr><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/egalite-des-chances&#39;">Egalité des chances</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Elem">&nbsp;</td></tr><tr><td id="Menu_Tbl_Titre">Vie de l'école</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Titre">Réseau</td></tr><tr><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/campus-pratique&#39;">Campus pratique</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Elem" onclick="window.open(&#39;https://alumni.he-arc.ch&#39;)">Alumni</td></tr><tr><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/sport&#39;">Sport</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Elem" onclick="window.open(&#39;http://www.espace-arceurope.eu&#39;)">Arc Europe</td></tr><tr><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/soutien-aux-etudiants&#39;">Soutien aux étudiants</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Elem" onclick="window.open(&#39;http://www.communautedusavoir.org&#39;)">Communauté du savoir</td></tr><tr><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/mobilite&#39;">Mobilité</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/liens&#39;">Liens</td></tr><tr><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/bibliotheques&#39;">Bibliothèques</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/impressum&#39;">Impressum</td></tr></tbody></table></ul></li><li class="toggleSubMenu" id="section_cor"><a href="">CONSERVATION-RESTAURATION</a><ul class="subMenu" style="display: none;"><table id="Menu_Tbl_COR"><tbody><tr><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/conservation-restauration/contacts-organisation&#39;">Contacts et organisation</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Elem">&nbsp;</td></tr><tr><td id="Menu_Tbl_Titre">Profession CR</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Titre">Futur-e étudiant-e</td></tr><tr><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/conservation-restauration/metiers-conservation-restauration&#39;">Les métiers</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/conservation-restauration/etudiant-un-jour&#39;">Etudiant-e d'un jour</td></tr><tr><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/conservation-restauration/les-specialisations&#39;">Les spécialisations</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/conservation-restauration/temoignages&#39;">Témoignages</td></tr><tr><td id="Menu_Tbl_Elem">&nbsp;</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/conservation-restauration/admission&#39;">Admission</td></tr><tr><td id="Menu_Tbl_Titre">Recherche et services</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Titre">Bachelor et Master</td></tr><tr><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/conservation-restauration/projet-recherche&#39;">Projets Ra&amp;D</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/conservation-restauration/bachelor&#39;">Bachelor</td></tr><tr><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/conservation-restauration/unite-recherche&#39;">Unité de recherche</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/conservation-restauration/master&#39;">Master</td></tr><tr><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/conservation-restauration/prestations-service&#39;">Prestations de service</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch#&#39;">Horaires</td></tr><tr><td id="Menu_Tbl_Elem">&nbsp;</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/conservation-restauration/mobilite-international&#39;">International</td></tr><tr><td id="Menu_Tbl_Elem">&nbsp;</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/conservation-restauration/swiss-crc&#39;">Swiss CRC</td></tr><tr><td id="Menu_Tbl_Titre">Alumni</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Titre">Formation continue</td></tr><tr><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/conservation-restauration/travaux-diplomes&#39;">Travaux de diplôme</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/conservation-restauration/formation-continue&#39;">Liste des cours</td></tr><tr><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/conservation-restauration/equivalence-titres&#39;">Equivalence des titres</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Elem">&nbsp;</td></tr><tr><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/conservation-restauration/perspectives-professionnelles&#39;">Perspectives professionnelles</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Elem">&nbsp;</td></tr></tbody></table></ul></li><li class="toggleSubMenu open" id="section_ges"><a href="">GESTION</a><ul class="subMenu" id="ouvert" style="display: block;"><table id="Menu_Tbl_GES"><tbody><tr><td id="Menu_Tbl_Titre">Général</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Titre">Bachelor</td></tr><tr><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/gestion/portrait&#39;">La HEG en bref</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/gestion/bachelor-bl&#39;">Droit économique</td></tr><tr><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/gestion/contact&#39;">Contact</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/gestion/bachelor-ee&#39;">Economie d'entreprise</td></tr><tr><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/agenda?domaine=4&#39;">Agenda</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/gestion/bachelor-ig&#39;">Informatique de gestion</td></tr><tr><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/presse?domaine=4&#39;">Presse</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Elem">&nbsp;</td></tr><tr><td id="Menu_Tbl_Titre">Etudiant-e-s</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Titre">Master</td></tr><tr><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/gestion/associations&#39;">Associations d'étudiant-e-s</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Elem" onclick="window.open(&#39;http://www.myemba.ch&#39;)">EMBA</td></tr><tr><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/bibliotheques&#39;">Bibliothèque</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/gestion/mas-mma&#39;">MAS en Marketing management</td></tr><tr><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/gestion/centre-de-carriere&#39;">Centre de carrière</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/gestion/mas-lce&#39;">MAS en Lutte contre la criminalité économique</td></tr><tr><td id="Menu_Tbl_Elem" onclick="window.open(&#39;http://www.forum-heg.ch&#39;)">Forum HEG</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Elem">&nbsp;</td></tr><tr><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/gestion/mobilite&#39;">Mobilité</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Elem" onclick="window.open(&#39;http://www.hes-so.ch/fr/master-business-administration-mscba-603.html&#39;)">MSc en Business Administration</td></tr><tr><td id="Menu_Tbl_Titre">Recherche appliquée</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Titre">Formation continue</td></tr><tr><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/gestion/imsi&#39;">Institut du Management et des systèmes d'information (IMSI)</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/gestion/cas&#39;">Certificats d'études avancées (CAS)</td></tr><tr><td id="Menu_Tbl_Elem">&nbsp;</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/gestion/grand-public&#39;">Formation grand public</td></tr><tr><td id="Menu_Tbl_Titre">Centres de compétences</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Titre">&nbsp;</td></tr><tr><td id="Menu_Tbl_Elem" colspan="3" onclick="window.location=&#39;http://prod-www.he-arc.ch/gestion/ilce&#39;">Institut de Lutte contre la criminalité économique (ILCE)</td></tr><tr><td id="Menu_Tbl_Elem" colspan="3" onclick="window.location=&#39;http://prod-www.he-arc.ch/gestion/ermp&#39;">Ecole romande de la Magistrature pénale (ERMP)</td></tr><tr><td id="Menu_Tbl_Elem" colspan="3" onclick="window.location=&#39;http://prod-www.he-arc.ch/gestion/eraj&#39;">Ecole romande en Administration judiciaire (ERAJ)</td></tr><tr><td id="Menu_Tbl_Elem" colspan="3" onclick="window.location=&#39;http://prod-www.he-arc.ch/gestion/imh&#39;">Institut du Marketing horloger (IMH)</td></tr><tr><td id="Menu_Tbl_Elem" colspan="3" onclick="window.location=&#39;http://prod-www.he-arc.ch/gestion/imvt&#39;">Institut du Management des villes et du territoire (IMVT)</td></tr></tbody></table></ul></li><li class="toggleSubMenu" id="section_ing"><a href="">INGENIERIE</a><ul class="subMenu" style="display: none;"><table id="Menu_Tbl_ING"><tbody><tr><td id="Menu_Tbl_Titre" colspan="3">Bachelor in industrial design engineering</td></tr><tr><td id="Menu_Tbl_Elem" colspan="3" onclick="window.location=&#39;http://prod-www.he-arc.ch/ingenierie/bachelor-conception-de-systemes-mecaniques&#39;">Conception de systèmes mecaniques</td></tr><tr><td id="Menu_Tbl_Elem" colspan="3" onclick="window.location=&#39;http://prod-www.he-arc.ch/ingenierie/bachelor-conception-ergonomique-et-design&#39;">Conception ergonomique et design</td></tr><tr><td id="Menu_Tbl_Titre" colspan="3">Bachelor en microtechniques</td></tr><tr><td id="Menu_Tbl_Elem" colspan="3" onclick="window.location=&#39;http://prod-www.he-arc.ch/ingenierie/bachelor-ingenierie-horlogere&#39;">Ingénierie horlogère</td></tr><tr><td id="Menu_Tbl_Elem" colspan="3" onclick="window.location=&#39;http://prod-www.he-arc.ch/ingenierie/bachelor-genie-industriel&#39;">Génie industriel</td></tr><tr><td id="Menu_Tbl_Elem" colspan="3" onclick="window.location=&#39;http://prod-www.he-arc.ch/ingenierie/bachelor-microtechnologies-et-electronique&#39;">Microtechnologies et électronique</td></tr><tr><td id="Menu_Tbl_Titre" colspan="3">Bachelor en informatique</td></tr><tr><td id="Menu_Tbl_Elem" colspan="3" onclick="window.location=&#39;http://prod-www.he-arc.ch/ingenierie/bachelor-developpement-logiciel-et-multimedia&#39;">Développement logiciel et multimédia</td></tr><tr><td id="Menu_Tbl_Elem" colspan="3" onclick="window.location=&#39;http://prod-www.he-arc.ch/ingenierie/bachelor-informatique-industrielle-et-embarquee&#39;">Informatique industrielle et embarquée</td></tr><tr><td id="Menu_Tbl_Elem" colspan="3" onclick="window.location=&#39;http://prod-www.he-arc.ch/ingenierie/bachelor-trinational&#39;">Informatique industrielle et embarquée (formation trinationale)</td></tr><tr><td id="Menu_Tbl_Titre" colspan="3">Master et formations postgrades</td></tr><tr><td id="Menu_Tbl_Elem" colspan="3" onclick="window.location=&#39;http://prod-www.he-arc.ch/ingenierie/master-of-science-in-engineering&#39;">Master of science HES-SO in engineering</td></tr><tr><td id="Menu_Tbl_Elem" colspan="3" onclick="window.location=&#39;http://prod-www.he-arc.ch/ingenierie/formations-postgrades-et-continues&#39;">Formations postgrades et continues</td></tr><tr><td id="Menu_Tbl_Titre">Entreprise</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Titre">Général</td></tr><tr><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/ingenierie/competences&#39;">Compétences</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/ingenierie/positionnement-strategique&#39;">Positionnement stratégique</td></tr><tr><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/ingenierie/collaboration-et-financement&#39;">Collaboration et financement</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/ingenierie/vision-et-mission&#39;">Vision et mission</td></tr><tr><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/ingenierie/prestations-de-services&#39;">Prestations de services</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/ingenierie/organisation&#39;">Organisation</td></tr><tr><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/ingenierie/partenariats&#39;">Partenariats</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/ingenierie/histoire&#39;">Histoire</td></tr><tr><td id="Menu_Tbl_Elem">&nbsp;</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/ingenierie/mobilite&#39;">Mobilité</td></tr></tbody></table></ul></li><li class="toggleSubMenu" id="section_san"><a href="">SANTE</a><ul class="subMenu" style="display: none;"><table id="Menu_Tbl_SAN"><tbody><tr><td id="Menu_Tbl_Titre">Portrait</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Titre">Futur-e-s étudiant-e-s</td></tr><tr><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/sante/historique&#39;">Historique</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/sante/aps&#39;">Année Propédeutique Santé</td></tr><tr><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/sante/developpement&#39;">Axes de développement</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/sante/soins-infirmiers&#39;">Bachelor en Soins infirmiers</td></tr><tr><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/sante/organisation&#39;">Organisation</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/sante/formations-continues&#39;">Formations continues</td></tr><tr><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/sante/contacts&#39;">Contacts</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/sante/mobilite&#39;">Mobilité</td></tr><tr><td id="Menu_Tbl_Titre">Recherche et Services</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Titre">Acteur de sa région</td></tr><tr><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/sante/rad&#39;">Fonctionnement</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/sante/philosophie&#39;">Philosophie</td></tr><tr><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/sante/rad/prestations-services&#39;">Prestations de services</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch#&#39;">Les projets</td></tr><tr><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/sante/professeur-chercheur&#39;">Professeur-e-s chercheur-e-s</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/sante/partenaires&#39;">Les partenaires</td></tr><tr><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/publications&#39;">Publications</td><td id="Menu_Tbl_Sep">&nbsp;</td><td id="Menu_Tbl_Elem" onclick="window.location=&#39;http://prod-www.he-arc.ch/sante/agenda&#39;">A ne pas manquer</td></tr></tbody></table></ul></li></ul></div>
+
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
@@ -67,7 +184,6 @@
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script src="bower_components/angular-aria/angular-aria.js"></script>
     <script src="bower_components/angular-material/angular-material.js"></script>
-    <script src="bower_components/jquery-smooth-scroll/jquery.smooth-scroll.js"></script>
     <script src="bower_components/waypoints/lib/noframework.waypoints.min.js"></script>
     <script src="bower_components/SHA-1/sha1.js"></script>
     <script src="bower_components/angulartics/src/angulartics.js"></script>
@@ -104,5 +220,456 @@
         <script src="scripts/controllers/search.js"></script>
         <script src="scripts/controllers/audio.js"></script>
         <!-- endbuild -->
+<script type="text/javascript">
+
+	(function ($) {
+
+		$(document).ready(
+			function () {
+
+				if ($("#Tpl2_Mobile_Entete").length > 0) {
+
+					$("div.court").each(
+						function () {
+							$(this).replaceWith('<div class="court">' + $(this).find('h1').text() + '</div>');
+						}
+					);
+					$("div.court").each(
+						function () {
+							$(this).css("background-image", "url(/sites/prod-www.he-arc.ch/themes/hearc/images/fleche_ges_close.png)");
+							$(this).css("background-repeat", "no-repeat");
+							$(this).css("background-size", "21px 10px");
+							$(this).css("background-position", "94% 20px");
+						}
+					);
+					$("div.long").each(
+						function () {
+							$(this).find('h1').remove();
+							$(this).hide();
+						}
+					);
+					$("div.court").click(
+						function () {
+							if ($(this).next("div.long").is(':visible')) {
+								$(this).next("div.long").hide();
+								$(this).css("background-image", "url(/sites/prod-www.he-arc.ch/themes/hearc/images/fleche_ges_close.png)");
+								$(this).css("background-repeat", "no-repeat");
+								$(this).css("background-size", "21px 10px");
+								$(this).css("background-position", "94% 20px");
+								$(this).css("border-bottom", "1px dotted #000000");
+
+							}
+							else {
+								$(this).next("div.long").show();
+								$(this).css("background-image", "url(/sites/prod-www.he-arc.ch/themes/hearc/images/fleche_ges_open.png)");
+								$(this).css("background-repeat", "no-repeat");
+								$(this).css("background-size", "21px 10px");
+								$(this).css("background-position", "94% 20px");
+								$(this).css("border-bottom", "none");
+							}
+						}
+					);
+					$('p').each(function() {
+						var $this = $(this);
+						if($this.html().replace(/\s|&nbsp;/g, '').length == 0)
+							$this.remove();
+					});
+
+					$("#Tpl2_Mobile_Contenu_ZoneInfo").children().hide();
+
+					$(".pdf").each(
+						function(){
+							$(this).parent().show();
+							$(this).show();
+							if($(this).attr('target') == '_blank') {
+								$(this).replaceWith('<table><tr><td id="Tpl2_pdficone_img"><img src="/sites/prod-www.he-arc.ch/themes/hearc/images/logo_pdf.png"></td><td id="Tpl2_pdficone_lien"><a href="' + $(this).attr('href') + '" target="_blank">' + $(this).text() + '</a></td></tr></table>');
+							}
+							else {
+								$(this).replaceWith('<table><tr><td id="Tpl2_pdficone_img"><img src="/sites/prod-www.he-arc.ch/themes/hearc/images/logo_pdf.png"></td><td id="Tpl2_pdficone_lien"><a href="' + $(this).attr('href') + '">' + $(this).text() + '</a></td></tr></table>');
+							}
+
+						}
+					);
+
+					$("#Menu_Icones_Social_Facebook_Elem").hide();
+
+					$("#Menu_Icones_Social_Facebook").click(
+						function () {
+							if ($("#Menu_Icones_Social_Facebook_Elem").is(':hidden')) {
+								$("#Menu_Icones_Social_Facebook_Elem").slideDown("fast", function () { $("#Menu_Icones_Social_Facebook_Fleche").addClass("open") } );
+							}
+							else {
+								$("#Menu_Icones_Social_Facebook_Elem").slideUp("fast", function () { $("#Menu_Icones_Social_Facebook_Fleche").removeClass("open") } );
+							}
+							return false;
+						}
+					);
+
+					$("#Menu_Icones_Social_Youtube_Elem").hide();
+
+					$("#Menu_Icones_Social_Youtube").click(
+						function () {
+							if ($("#Menu_Icones_Social_Youtube_Elem").is(':hidden')) {
+								$("#Menu_Icones_Social_Youtube_Elem").slideDown("fast", function () { $("#Menu_Icones_Social_Youtube_Fleche").addClass("open") } );
+							}
+							else {
+								$("#Menu_Icones_Social_Youtube_Elem").slideUp("fast", function () { $("#Menu_Icones_Social_Youtube_Fleche").removeClass("open") } );
+							}
+							return false;
+						}
+					);
+
+					$("#Menu_Icones_Social").hide();
+
+					$("#Mobile_Menu_Icones_Body_Social").click(
+						function () {
+
+							if ($("#Menu_Icones_Social").is(':hidden')) {
+								if ($("#Tpl2_Mobile_Contenu").css('opacity') == 1) {
+									$("#Tpl2_Mobile_Entete").css({ opacity: 0.3 });
+									$("#Tpl2_Mobile_Contenu").css({ opacity: 0.3 });
+									$("#Tpl2_Mobile_Entete").css('pointer-events', 'none');
+									$("#Tpl2_Mobile_Contenu").css('pointer-events', 'none');
+								}
+								$("#Menu_Icones_Social").toggle("slide");
+								$('#Menu_Icones_Connexion').fadeOut('fast');
+								$('#Menu_Icones_Recherche').fadeOut('fast');
+								document.getElementById("Mobile_Menu_Icones").style.display = 'none'; // none ou block
+								document.getElementById("Mobile_Menu_Liens").style.display = 'none'; // none ou block
+							}
+							else {
+								$("#Tpl1_Mobile_Entete").css({ opacity: 1 });
+								$("#Tpl1_Mobile_Contenu").css({ opacity: 1 });
+								$("#Tpl1_Mobile_Entete").css('pointer-events', 'auto');
+								$("#Tpl1_Mobile_Contenu").css('pointer-events', 'auto');
+								$("#Menu_Icones_Social").toggle("slide");
+								document.getElementById("Mobile_Menu_Icones").style.display = 'none'; // none ou block
+								document.getElementById("Mobile_Menu_Liens").style.display = 'none'; // none ou block
+							}
+
+							return false;
+						}
+					);
+
+					$("#Menu_Icones_Connexion").hide();
+
+					$("#Mobile_Menu_Icones_Body_Connexion").click(
+						function () {
+							if ($("#Menu_Icones_Connexion").is(':hidden')) {
+								if ($("#Tpl2_Mobile_Contenu").css('opacity') == 1) {
+									$("#Tpl2_Mobile_Entete").css({ opacity: 0.3 });
+									$("#Tpl2_Mobile_Contenu").css({ opacity: 0.3 });
+									$("#Tpl2_Mobile_Entete").css('pointer-events', 'none');
+									$("#Tpl2_Mobile_Contenu").css('pointer-events', 'none');
+								}
+								$("#Menu_Icones_Connexion").toggle("slide");
+								$('#Menu_Icones_Social').fadeOut('fast');
+								$('#Menu_Icones_Recherche').fadeOut('fast');
+								document.getElementById("Mobile_Menu_Icones").style.display = 'none'; // none ou block
+								document.getElementById("Mobile_Menu_Liens").style.display = 'none'; // none ou block
+							}
+							else {
+								$("#Tpl2_Mobile_Entete").css({ opacity: 1 });
+								$("#Tpl2_Mobile_Contenu").css({ opacity: 1 });
+								$("#Tpl2_Mobile_Entete").css('pointer-events', 'auto');
+								$("#Tpl2_Mobile_Contenu").css('pointer-events', 'auto');
+								$("#Menu_Icones_Connexion").toggle("slide");
+								document.getElementById("Mobile_Menu_Icones").style.display = 'none'; // none ou block
+								document.getElementById("Mobile_Menu_Liens").style.display = 'none'; // none ou block
+							}
+
+							return false;
+						}
+					);
+
+					$("#Menu_Icones_Recherche").hide();
+
+					$("#Mobile_Menu_Icones_Body_Recherche").click(
+						function () {
+
+							$('#edit-search-block-form--4').val("");
+							$('#edit-search-block-form--4').attr("placeholder", "Site HE-Arc...");
+
+							if ($("#Menu_Icones_Recherche").is(':hidden')) {
+								if ($("#Tpl2_Mobile_Contenu").css('opacity') == 1) {
+									$("#Tpl2_Mobile_Entete").css({ opacity: 0.3 });
+									$("#Tpl2_Mobile_Contenu").css({ opacity: 0.3 });
+									$("#Tpl2_Mobile_Entete").css('pointer-events', 'none');
+									$("#Tpl2_Mobile_Contenu").css('pointer-events', 'none');
+								}
+								$("#Menu_Icones_Recherche").toggle("slide");
+								$('#Menu_Icones_Social').fadeOut('fast');
+								$('#Menu_Icones_Connexion').fadeOut('fast');
+								document.getElementById("Mobile_Menu_Icones").style.display = 'none'; // none ou block
+								document.getElementById("Mobile_Menu_Liens").style.display = 'none'; // none ou block
+							}
+							else {
+								$("#Tpl2_Mobile_Entete").css({ opacity: 1 });
+								$("#Tpl2_Mobile_Contenu").css({ opacity: 1 });
+								$("#Tpl2_Mobile_Entete").css('pointer-events', 'auto');
+								$("#Tpl2_Mobile_Contenu").css('pointer-events', 'auto');
+								$("#Menu_Icones_Recherche").toggle("slide");
+								document.getElementById("Mobile_Menu_Icones").style.display = 'none'; // none ou block
+								document.getElementById("Mobile_Menu_Liens").style.display = 'none'; // none ou block
+							}
+
+							return false;
+						}
+					);
+
+					document.getElementById("Mobile_Menu_Icones").style.display = 'none'; // none ou block
+					document.getElementById("Mobile_Menu_Liens").style.display = 'none'; // none ou block
+
+					$(".navigation_mobile ul.subMenu_mobile:not('.open_at_load')").hide();
+
+					$("#ouvert").show(function () { $(this).parent().addClass("open") });
+
+					$(".navigation_mobile li.toggleSubMenu_mobile span").each(
+						function () {
+							var TexteSpan = $(this).text();
+							$(this).replaceWith('<a href="" title="Afficher le sous-menu">' + TexteSpan + '<\/a>') ;
+						}
+					) ;
+
+					$(".navigation_mobile li.toggleSubMenu_mobile > a").click(
+						function () {
+							if ($(this).next("ul.subMenu_mobile:visible").length != 0) {
+								$(this).next("ul.subMenu_mobile").slideUp("fast", function () { $(this).parent().removeClass("open") } );
+							}
+							else {
+								$(".navigation_mobile ul.subMenu_mobile").slideUp("fast", function () { $(this).parent().removeClass("open") });
+								$(this).next("ul.subMenu_mobile").slideDown("fast", function () { $(this).parent().addClass("open") } );
+							}
+							return false;
+						}
+					);
+
+					$('.form-submit').val("");
+
+				}
+				else {
+					/*
+					$('#Tpl2_Racine_Image').cycle({
+						fx: 'scrollLeft',
+						containerResize: false,
+						slideResize: false,
+						fit: 1
+					});
+					*/
+
+					$("div.long").each(
+						function () {
+							$(this).hide();
+						}
+					);
+
+					$("div.court").click(
+						function () {
+							$(this).hide();
+							$(this).next("div.long").show();
+						}
+					);
+
+					$("div.long").click(
+						function () {
+							$(this).hide();
+							$(this).prev("div.court").show();
+						}
+					);
+
+					$('.lienIterne').click(function(event){
+						event.stopImmediatePropagation();
+					});
+
+					$(".pdf").each(
+						function(){
+							if($(this).attr('target') == '_blank') {
+								$(this).replaceWith('<table><tr><td id="Tpl2_pdficone_img"><img src="/sites/prod-www.he-arc.ch/themes/hearc/images/logo_pdf.png"></td><td id="Tpl2_pdficone_lien"><a href="' + $(this).attr('href') + '" target="_blank">' + $(this).text() + '</a></td></tr></table>');
+							}
+							else {
+								$(this).replaceWith('<table><tr><td id="Tpl2_pdficone_img"><img src="/sites/prod-www.he-arc.ch/themes/hearc/images/logo_pdf.png"></td><td id="Tpl2_pdficone_lien"><a href="' + $(this).attr('href') + '">' + $(this).text() + '</a></td></tr></table>');
+							}
+
+						}
+					);
+					$(".lien").each(
+						function(){
+							if($(this).attr('target') == '_blank') {
+								$(this).replaceWith('<table><tr><td id="Tpl2_pdficone_img"><img src="/sites/prod-www.he-arc.ch/themes/hearc/images/logo_lien.png"></td><td id="Tpl2_pdficone_lien"><a href="' + $(this).attr('href') + '" target="_blank">' + $(this).text() + '</a></td></tr></table>');
+							}
+							else {
+								$(this).replaceWith('<table><tr><td id="Tpl2_pdficone_img"><img src="/sites/prod-www.he-arc.ch/themes/hearc/images/logo_lien.png"></td><td id="Tpl2_pdficone_lien"><a href="' + $(this).attr('href') + '">' + $(this).text() + '</a></td></tr></table>');
+							}
+
+						}
+					);
+
+					$("#Menu_Icones_Social_Facebook_Elem").hide();
+
+					$("#Menu_Icones_Social_Facebook").click(
+						function () {
+							if ($("#Menu_Icones_Social_Facebook_Elem").is(':hidden')) {
+								$("#Menu_Icones_Social_Facebook_Elem").slideDown("fast", function () { $("#Menu_Icones_Social_Facebook_Fleche").addClass("open") } );
+							}
+							else {
+								$("#Menu_Icones_Social_Facebook_Elem").slideUp("fast", function () { $("#Menu_Icones_Social_Facebook_Fleche").removeClass("open") } );
+							}
+							return false;
+						}
+					);
+
+					$("#Menu_Icones_Social_Youtube_Elem").hide();
+
+					$("#Menu_Icones_Social_Youtube").click(
+						function () {
+							if ($("#Menu_Icones_Social_Youtube_Elem").is(':hidden')) {
+								$("#Menu_Icones_Social_Youtube_Elem").slideDown("fast", function () { $("#Menu_Icones_Social_Youtube_Fleche").addClass("open") } );
+							}
+							else {
+								$("#Menu_Icones_Social_Youtube_Elem").slideUp("fast", function () { $("#Menu_Icones_Social_Youtube_Fleche").removeClass("open") } );
+							}
+							return false;
+						}
+					);
+
+					$("#Menu_Icones_Social").hide();
+
+					$("#Menu_Icones_Tbl_Social").click(
+						function () {
+
+							if ($("#Menu_Icones_Social").is(':hidden')) {
+								if ($("#Tpl2_Racine").css('opacity') == 1) {
+									$("#Tpl2_Racine").css({ opacity: 0.3 });
+									$("#Tpl2_Racine").css('pointer-events', 'none');
+								}
+								$("#Menu_Icones_Social").toggle("slide");
+								$('#Menu_Icones_Connexion').fadeOut('fast');
+								$('#Menu_Icones_Recherche').fadeOut('fast');
+							}
+							else {
+								$("#Tpl2_Racine").css({ opacity: 1 });
+								$("#Tpl2_Racine").css('pointer-events', 'auto');
+								$("#Menu_Icones_Social").toggle("slide");
+							}
+
+							return false;
+						}
+					);
+
+					$("#Menu_Icones_Connexion").hide();
+
+					$("#Menu_Icones_Tbl_Connexion").click(
+						function () {
+							if ($("#Menu_Icones_Connexion").is(':hidden')) {
+								if ($("#Tpl2_Racine").css('opacity') == 1) {
+									$("#Tpl2_Racine").css({ opacity: 0.3 });
+									$("#Tpl2_Racine").css('pointer-events', 'none');
+								}
+								$("#Menu_Icones_Connexion").toggle("slide");
+								$('#Menu_Icones_Social').fadeOut('fast');
+								$('#Menu_Icones_Recherche').fadeOut('fast');
+							}
+							else {
+								$("#Tpl2_Racine").css({ opacity: 1 });
+								$("#Tpl2_Racine").css('pointer-events', 'auto');
+								$("#Menu_Icones_Connexion").toggle("slide");
+							}
+
+							return false;
+						}
+					);
+
+					$("#Menu_Icones_Recherche").hide();
+
+					$("#Menu_Icones_Tbl_Recherche").click(
+						function () {
+
+							$('#edit-search-block-form--4').val("");
+							$('#edit-search-block-form--4').attr("placeholder", "Site HE-Arc...");
+
+							if ($("#Menu_Icones_Recherche").is(':hidden')) {
+								if ($("#Tpl2_Racine").css('opacity') == 1) {
+									$("#Tpl2_Racine").css({ opacity: 0.3 });
+									$("#Tpl2_Racine").css('pointer-events', 'none');
+								}
+								$("#Menu_Icones_Recherche").toggle("slide");
+								$('#Menu_Icones_Social').fadeOut('fast');
+								$('#Menu_Icones_Connexion').fadeOut('fast');
+							}
+							else {
+								$("#Tpl2_Racine").css({ opacity: 1 });
+								$("#Tpl2_Racine").css('pointer-events', 'auto');
+								$("#Menu_Icones_Recherche").toggle("slide");
+							}
+
+							return false;
+						}
+					);
+
+					document.getElementById("Menu_Liens").style.display = 'none'; // none ou block
+
+					$(".navigation ul.subMenu:not('.open_at_load')").hide();
+
+					$("#ouvert").show(function () { $(this).parent().addClass("open") });
+
+					$(".navigation li.toggleSubMenu span").each(
+						function () {
+							var TexteSpan = $(this).text();
+							$(this).replaceWith('<a href="" title="Afficher le sous-menu">' + TexteSpan + '<\/a>') ;
+						}
+					) ;
+
+					$(".navigation li.toggleSubMenu > a").click(
+						function () {
+							if ($(this).next("ul.subMenu:visible").length != 0) {
+								$(this).next("ul.subMenu").slideUp("fast", function () { $(this).parent().removeClass("open") } );
+							}
+							else {
+								$(".navigation ul.subMenu").slideUp("fast", function () { $(this).parent().removeClass("open") });
+								$(this).next("ul.subMenu").slideDown("fast", function () { $(this).parent().addClass("open") } );
+							}
+							return false;
+						}
+					);
+
+					$('.form-submit').val("");
+
+				}
+
+			}
+		);
+
+		jQuery('#Menu_Icones_Menu').click(function(e) {
+			jQuery('#Menu_Liens').fadeToggle('fast');
+			e.stopPropagation();
+		});
+
+		jQuery('#Tpl2_Mobile_Entete_Menu').click(function(e) {
+			jQuery('#Mobile_Menu_Icones').fadeToggle('fast');
+			jQuery('#Mobile_Menu_Liens').fadeToggle('fast');
+			e.stopPropagation();
+		});
+
+		jQuery('#edit-search-block-form--4').click(function(e) {
+			e.stopPropagation();
+		});
+
+		jQuery(document).click(function(e) {
+			$("#Tpl2_Racine").css({ opacity: 1 });
+			$("#Tpl2_Racine").css('pointer-events', 'auto');
+			$("#Tpl2_Mobile_Entete").css({ opacity: 1 });
+			$("#Tpl2_Mobile_Contenu").css({ opacity: 1 });
+			$("#Tpl2_Mobile_Entete").css('pointer-events', 'auto');
+			$("#Tpl2_Mobile_Contenu").css('pointer-events', 'auto');
+			jQuery('#Menu_Liens').fadeOut('fast');
+			jQuery('#Menu_Icones_Social').fadeOut('fast');
+			jQuery('#Menu_Icones_Connexion').fadeOut('fast');
+			jQuery('#Menu_Icones_Recherche').fadeOut('fast');
+			e.stopPropagation();
+		});
+
+	})(jQuery);
+
+</script>
 </body>
 </html>

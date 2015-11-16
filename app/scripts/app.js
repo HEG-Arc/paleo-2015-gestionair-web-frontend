@@ -73,17 +73,4 @@ $mdThemingProvider.definePalette('arc', {
     .accentPalette('green', {
       'default': '600' // use shade 200 for default, and keep all other shades the same
     });
-})
-.run(function($rootScope, $location, $timeout) {
-  //when the route is changed scroll to the proper element.
-  $rootScope.$on('$routeChangeSuccess', function() {
-    $timeout(function(){
-      if($location.hash()){
-        jQuery.smoothScroll({
-            scrollTarget: '#' + $location.hash(),
-            scrollElement: jQuery('#scrollparent')
-        });
-      }
-    });
-  });
 });

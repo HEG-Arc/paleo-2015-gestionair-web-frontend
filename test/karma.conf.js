@@ -33,7 +33,6 @@ module.exports = function(config) {
       'bower_components/angular-touch/angular-touch.js',
       'bower_components/angular-aria/angular-aria.js',
       'bower_components/angular-material/angular-material.js',
-      'bower_components/jquery-smooth-scroll/jquery.smooth-scroll.js',
       'bower_components/waypoints/lib/noframework.waypoints.min.js',
       'bower_components/SHA-1/sha1.js',
       'bower_components/angulartics/src/angulartics.js',
