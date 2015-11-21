@@ -1,39 +1,27 @@
-<md-card id="scoreboard">
-    <md-toolbar>
-        <div class="md-toolbar-tools">
-			<h2 class="md-toolbar-item">
-                Equipe: {{ctrl.game.team}} @ {{ctrl.game.start_time | date: 'yyyy-MM-dd HH:mm'}}
-            </h2>
-		</div>
-    </md-toolbar>
-    <md-card-content>
-        <p>Reécoute les questions en cliquant dessus.</p>
-        <table>
-            <thead>
-                <tr>
-                    <th class="text-left">Rang</th>
-                    <th class="text-left">Joueur</th>
-                    <th class="text-right">Score</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr ng-repeat="player in ctrl.game.players | orderBy: '-score'">
-                    <td><h3>{{$index +1}}</h3>
-                    </td>
-                    <td><h3>{{player.name}} #{{player.number}}</h3>
-                        <div>
-                            <span ng-click="audio.playQuestion(answer.question, answer.code)" ng-repeat="answer in player.answers" class="flag">
-                                <md-tooltip md-direction="top">
-                                    {{ctrl.api.languageName(answer.code)}}
-                                    {{answer.duration}}s
-                                </md-tooltip>
-                                <md-icon md-svg-src="images/icons/volume-high.svg"></md-icon>
-                                <span ng-class="{'correct': answer.correct, 'wrong': answer.correct==0, 'unknown': answer.correct==null}"></span><img ng-src="images/flags/{{answer.code}}.png">
-                            </span>
-                        </div>
-                    </td>
-                <td class="text-right"><h3>{{player.score||0}}</h3></td></tr>
-            </tbody>
-        </table>
-    </md-card-content>
-</md-card>
+<div id="scoreboard">
+<p>Reécoute les questions en cliquant dessus.</p>
+<table>
+    <thead>
+        <tr>
+            <th class="text-left">Joueur</th>
+            <th class="text-right">Score</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><h3>{{player.name}} #{{player.number}}</h3>
+                <div>
+                    <span ng-click="audio.playQuestion(answer.question, answer.code)" ng-repeat="answer in player.answers" class="flag">
+                        <md-tooltip md-direction="top">
+                            {{ctrl.api.languageName(answer.code)}}
+                            {{answer.duration}}s
+                        </md-tooltip>
+                        <md-icon md-svg-src="images/icons/volume-high.svg"></md-icon>
+                        <span ng-class="{'correct': answer.correct, 'wrong': answer.correct==0, 'unknown': answer.correct==null}"></span><img ng-src="images/flags/{{answer.code}}.png">
+                    </span>
+                </div>
+            </td>
+        <td class="text-right"><h3>{{player.score||0}}</h3></td></tr>
+    </tbody>
+</table>
+</div>

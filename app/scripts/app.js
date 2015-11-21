@@ -31,7 +31,7 @@ angular
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
-      .when('/score/:code', {
+      .when('/s/:playerId', {
         templateUrl: 'views/score.html',
         controller: 'ScoreCtrl',
         controllerAs: 'ctrl'

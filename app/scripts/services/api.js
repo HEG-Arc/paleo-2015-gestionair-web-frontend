@@ -26,6 +26,10 @@ angular.module('gestionairApp')
       return $http.get(API_URL + '/games/' + id);
     };
 
+    _this.getPlayer = function(id){
+      return $http.get(API_URL + '/player/' + id);
+    };
+
     _this.fetchDate = function(date){
       return $http.get(API_URL + '/games?date=' + date);
     };

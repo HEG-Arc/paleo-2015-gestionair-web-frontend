@@ -1,7 +1,5 @@
-<md-card id="play">
-  <md-card-content>
-    <h1>Jouer</h1>
-    <p>Venez tester vos compétence de gestion et de langues du <strong>20 au 26 juillet 2015 @ PALÉO</strong></p>
+<h1>Jouer</h1>
+    <p>Venez tester vos compétence de gestion et de langues le <strong>21.11.15 aux Portes-ouvertes de la HE-Arc Neuchâtel</strong></p>
     <h3>Entraînement</h3>
       <p>Ecouter un appel téléphonique et redirigez la personne vers le bon département.</p>
       <div layout="row"  layout-align="space-around center">
@@ -19,84 +17,8 @@
     </md-list-item>
     <md-divider ng-repeat-end ng-if="!$last"></md-divider>
   </md-list>
-  </md-card-content>
-</md-card>
+    <h1>Résultats</h1>
+    <p>Si tu as participé à l'activité Gestion'air, retrouve tes résultats en scannant le QR-Code <md-icon md-svg-src="images/icons/qrcode.svg"></md-icon> de ton ticket!</p>
 
-<md-card id="score">
-  <img src="images/words.gif" alt="words" />
-  <md-card-content>
-    <h1 analytics-on="scrollby">Résultats</h1>
-    <p>Si tu as participé à l'activité Gestion'air durant le Paléo 2015, retrouve tes résultats en entrant le code figurant sur ton étiquette ou en scannant le QR-Code!</p>
-    <form layout="row" ng-submit="main.showCode()">
-      <md-input-container class="md-icon-float" flex>
-      <!-- Use floating label instead of placeholder -->
-      <label>Code</label>
-      <md-icon md-svg-src="images/icons/qrcode.svg"></md-icon>
-        <input ng-model="main.code" type="number">
-      </md-input-container>
-      <md-button aria-label="afficher code" class="md-fab" aria-label="Eat cake">
-        <md-icon md-svg-src="images/icons/magnify.svg"></md-icon>
-      </md-button>
-    </form>
-    <p>Pas de code? Consulte <md-button aria-label="tableau des résultats" href="#/search" class="md-primary">le tableau de résultats</md-button></p>
-  </md-card-content>
-</md-card>
 
-<md-card id="about">
-  <md-card-content>
-    <h1 analytics-on="scrollby">A propos</h1>
-  <h2>Equipe</h2>
-  <p>L'équipe du projet est composée d'étudiant-e-s des trois filières de la HEG Arc (business law [BL], économie
-  d'entreprise [EE] et informatique de gestion [IG]). Elle est accompagnée d'un professeur et d'un assistant.</p>
-  <ul>
-      <li>Boiziau	Charlotte (étudiante EE, <em>scénographie</em>)</li>
-      <li>Botha Julie (étudiante BL, <em>call center</em>)</li>
-      <li>Cornu Jonathan (étudiant BL, <em>scénographie</em>)</li>
-      <li>Dubois Mathieu (étudiant IG, <em>IT</em>)</li>
-      <li>Duperret Kevin (étudiant EE, <em>scénographie</em>)</li>
-      <li>Fernandes Vanessa (étudiante BL, <em>call center</em>)</li>
-      <li>Gaspoz Cédric (professeur, <em>encadrement</em>)</li>
-      <li>Herrera Alexis (étudiant EE, <em>call center</em>)</li>
-      <li>Maliki Zana (étudiante EE, <em>call center</em>)</li>
-      <li>Rosselet Antoine (assistant de recherche IG, <em>coordinateur</em>)</li>
-      <li>Vuille Benoît (étudiant IG, <em>IT</em>)</li>
-  </ul>
-
-  <h2>Traducteurs / narrateurs</h2>
-  <p>Les questions du call center sont traduites dans 10 langues. Les questions en allemand et anglais ont
-      été créées dans le cadre des cours de langue de la HEG. Les autres langues ont été traduites et enregistrées
-      par des étudiant-e-s bilingues de notre école.</p>
-  <ul>
-      <li>Barbosa Patricia (étudiant, <em>portugais</em>)</li>
-      <li>Bashutkina Maria (adjointe scientifique, <em>russe</em>)</li>
-      <li>Chaudhary Satya (étudiant, <em>népalais</em>)</li>
-      <li>David Roxana (assistante de recherche, <em>roumain</em>)</li>
-      <li>De Santo Alessio (adjoint scientifique, <em>italien</em>)</li>
-      <li>Gualandris Aurea (étudiante, <em>italien</em>)</li>
-      <li>Herrera Alexis (étudiant, <em>espagnol</em>)</li>
-      <li>Ioudina Ksenia (étudiante, <em>russe</em>)</li>
-      <li>Saadoon Havar (étudiant, <em>kurde</em>)</li>
-      <li>Stojak Nikolina (étudiante, <em>croate</em>)</li>
-  </ul>
-
-  <h2>Musique originale</h2>
-  <p>Toutes les musiques de Gestion'air ont été créées spécialement pour l'occasion par des professeurs et
-  étudiants de l'école.</p>
-  <ul>
-      <li>Ulysse Rosselet (professeur, <em>compositeur, paroles, chant</em>)</li>
-      <li>Equipe de projet (<em>chant</em>)</li>
-  </ul>
-
-  <h2>Collaborations</h2>
-  <p>Le projet a pu se réaliser grâce à la collaboration de nombreuses personnes qui nous ont accompagné durant
-      tout ou partie du processus.</p>
-  <ul>
-      <li>Barbier Gérard (intendant, <em>encadrement construction du stand</em>)</li>
-      <li>Ellis Sarah Main (professeure, <em>anglais</em>)</li>
-      <li>Fritscher Boris (professeur, <em>développement simulateur & trouble-shooter</em>)</li>
-      <li>Hug Priska (professeure, <em>allemand</em>)</li>
-      <li>Staudacher Karin (professeure, <em>allemand</em>)</li>
-      <li>Zadory Bertrand (professeur, <em>anglais</em>)</li>
-  </ul>
-    </md-card-content>
-</md-card>
+  <p style="text-align:center;padding-top: 2em;"><img src="images/words.gif" alt="words" style="width: 50%" /></p>
