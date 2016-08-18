@@ -24,21 +24,17 @@ angular
     'com.2fdevs.videogular.plugins.controls',
     'com.2fdevs.videogular.plugins.analytics'
   ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider, $locationProvider) {
+    $locationProvider.html5Mode(true);
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
-      .when('/s/:playerId', {
+      .when('/:playerId', {
         templateUrl: 'views/score.html',
         controller: 'ScoreCtrl',
-        controllerAs: 'ctrl'
-      })
-      .when('/search', {
-        templateUrl: 'views/search.html',
-        controller: 'SearchCtrl',
         controllerAs: 'ctrl'
       })
       .otherwise({

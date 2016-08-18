@@ -8,7 +8,7 @@
 // 'test/spec/**/*.js'
 
 module.exports = function (grunt) {
-
+  var modRewrite = require('connect-modrewrite');
   // Time how long tasks take. Can help when optimizing build times
   require('time-grunt')(grunt);
 
@@ -93,6 +93,7 @@ module.exports = function (grunt) {
           middleware: function (connect) {
             return [
               require('grunt-connect-proxy/lib/utils').proxyRequest,
+              modRewrite(['^[^\\.]*$ /index.html [L]']),
               connect.static('.tmp'),
               connect().use(
                 '/bower_components',
