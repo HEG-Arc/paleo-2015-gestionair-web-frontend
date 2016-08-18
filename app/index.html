@@ -38,9 +38,12 @@
 
 <p><img alt="" src="images/side.jpg" style="width:100%"></p>
 <h1>Prochaine session</h1>
-<h4><b>08-14.09.16</b> Capa’cité <i>La Chaux-de-Fonds</i></h4>
-<h4><b>23-25.09.16</b> Inauguration Campus Delémont <i>Delémont</i></h4>
+<div ng-controller="EventCtrl as $ctrl">
+	<h4 ng-repeat="e in $ctrl.events"><b>{{e.dates}}</b> {{e.name}} <i>{{e.location}}</i></h4>
+</div>
 
+	<h4><b>08-14.09.16</b> Capa’cité <i>La Chaux-de-Fonds</i></h4>
+	<h4><b>23-25.09.16</b> Inauguration Campus Delémont <i>Delémont</i></h4>
 <h1>Des questions?</h1>
 
 <h4>Contactez-nous:</h4>
@@ -123,6 +126,7 @@ gestion@he-arc.ch</h4>
         <script src="scripts/services/api.js"></script>
         <script src="scripts/controllers/search.js"></script>
         <script src="scripts/controllers/audio.js"></script>
+		<script src="scripts/controllers/event.js"></script>
         <!-- endbuild -->
 <script type="text/javascript">
 

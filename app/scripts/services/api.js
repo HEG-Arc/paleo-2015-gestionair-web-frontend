@@ -22,12 +22,20 @@ angular.module('gestionairApp')
       _this.languages = data;
     });
 
+    _this.getEvents = function() {
+      return $http.get(API_URL + '/events/upcoming');
+    };
+
     _this.getGame = function(id){
       return $http.get(API_URL + '/games/' + id);
     };
 
     _this.getPlayer = function(id){
       return $http.get(API_URL + '/player/' + id);
+    };
+
+    _this.getScore = function(id){
+      return $http.get(API_URL + '/score/' + id);
     };
 
     _this.fetchDate = function(date){
