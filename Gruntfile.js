@@ -390,6 +390,12 @@ module.exports = function (grunt) {
         cwd: '<%= yeoman.app %>/styles',
         dest: '.tmp/styles/',
         src: '{,*/}*.css'
+      },
+      stylesarc: {
+        expand: true,
+        cwd: '<%= yeoman.app %>/styles/arc',
+        dest: '<%= yeoman.dist %>/styles/arc',
+        src: '{,*/}*.*'
       }
     },
 
@@ -404,7 +410,8 @@ module.exports = function (grunt) {
       dist: [
         'copy:styles',
         'imagemin',
-        'svgmin'
+        'svgmin',
+        'copy:stylesarc'
       ]
     },
 
