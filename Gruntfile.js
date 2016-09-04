@@ -79,7 +79,8 @@ module.exports = function (grunt) {
                 {
                     context: '/api',
                     host: 'gestionair.ch',
-                    port: 80,
+                    port: 443,
+                    protocol: 'https:',
                     https: false,
                     changeOrigin: true,
                     headers: {

@@ -38,7 +38,7 @@
 
 <p><img alt="" src="images/side.jpg" style="width:100%"></p>
 <h1>Prochaine session</h1>
-<div ng-controller="EventCtrl as $ctrl">
+<div ng-controller="EventCtrl as $ctrl" ng-cloak="">
 	<h4 ng-repeat="e in $ctrl.events"><b>{{e.dates}}</b> {{e.name}} <i>{{e.location}}</i></h4>
 </div>
 
@@ -114,6 +114,8 @@ gestion@he-arc.ch</h4>
     <script src="bower_components/videogular/videogular.js"></script>
     <script src="bower_components/videogular-angulartics/vg-analytics.js"></script>
     <script src="bower_components/videogular-controls/vg-controls.js"></script>
+    <script src="bower_components/chart.js/dist/Chart.bundle.min.js"></script>
+    <script src="bower_components/angular-chart.js/dist/angular-chart.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -125,6 +127,7 @@ gestion@he-arc.ch</h4>
         <script src="scripts/controllers/search.js"></script>
         <script src="scripts/controllers/audio.js"></script>
 		<script src="scripts/controllers/event.js"></script>
+		<script src="scripts/controllers/stats.js"></script>
         <!-- endbuild -->
 <script type="text/javascript">
 

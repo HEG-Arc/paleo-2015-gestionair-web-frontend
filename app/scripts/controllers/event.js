@@ -30,7 +30,7 @@ angular.module('gestionairApp')
                   }
                 }
             } else {
-                e.dates = start_date.getDate() + '.' + smonth + '.' + start_date.getFullYear()
+                e.dates = start_date.getDate() + '.' + smonth + '.' + start_date.getFullYear();
             }
             $ctrl.events.push(e);
         }

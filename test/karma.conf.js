@@ -58,6 +58,8 @@ module.exports = function(config) {
       'bower_components/videogular/videogular.js',
       'bower_components/videogular-angulartics/vg-analytics.js',
       'bower_components/videogular-controls/vg-controls.js',
+      'bower_components/chart.js/dist/Chart.bundle.min.js',
+      'bower_components/angular-chart.js/dist/angular-chart.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       "app/scripts/**/*.js",

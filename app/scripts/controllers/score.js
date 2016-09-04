@@ -21,7 +21,7 @@ angular.module('gestionairApp')
       }, function(){
         $scope.player = {
           'name': 'ERROR 404'
-        }
+        };
       });
     }
   });

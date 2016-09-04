@@ -22,7 +22,8 @@ angular
     'angulartics.google.analytics',
     'com.2fdevs.videogular',
     'com.2fdevs.videogular.plugins.controls',
-    'com.2fdevs.videogular.plugins.analytics'
+    'com.2fdevs.videogular.plugins.analytics',
+    'chart.js'
   ])
   .config(function ($routeProvider, $locationProvider) {
     $locationProvider.html5Mode(true);
@@ -32,6 +33,16 @@ angular
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
+      .when('/stats/:date', {
+        templateUrl: 'views/stats.html',
+        controller: 'StatsCtrl',
+        controllerAs: '$ctrl'
+      })
+      .when('/stats', {
+        templateUrl: 'views/stats.html',
+        controller: 'StatsCtrl',
+        controllerAs: '$ctrl'
+       })
       .when('/:code', {
         templateUrl: 'views/score.html',
         controller: 'ScoreCtrl',
