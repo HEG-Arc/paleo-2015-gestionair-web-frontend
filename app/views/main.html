@@ -1,24 +1,30 @@
 <h1>Jouer</h1>
-    <p>Venez tester vos compétence de gestion et de langues le <strong>21.11.15 aux Portes-ouvertes de la HE-Arc Neuchâtel</strong></p>
-    <h3>Entraînement</h3>
-      <p>Ecouter un appel téléphonique et redirigez la personne vers le bon département.</p>
-      <div layout="row"  layout-align="space-around center">
-        <md-button  analytics-on aria-label="jouer" ng-disabled="audio.gameState=='answering'" class="md-accent md-raised" ng-click="audio.nextQuestion()">Jouer</md-button>
-        <span flex></span>
-        <p class="answer correct" ng-show="audio.gameState=='result' && audio.correct">Correct Bravo!</p>
-        <p class="answer wrong" ng-show="audio.gameState=='result' && !audio.correct">Désolé faux!</p>
-        <span flex></span>
-        <p>Score {{audio.correctCount}} / {{audio.done.length}}</p>
-      </div>
-  <md-list>
-    <md-list-item analytics-on analytics-event="Answer" analytics-category="Game" analytics-label="{{dep.name}}" ng-disabled="audio.gameState!='answering'" ng-repeat-start="dep in main.api.departments | orderBy: dep.number">
-        <md-checkbox aria-label="{{dep.name}}" ng-disabled="audio.gameState!='answering'" ng-change="audio.answerQuestion(dep.number)"  ng-model="dep.answer"></md-checkbox>
-        {{dep.name}}
-    </md-list-item>
-    <md-divider ng-repeat-end ng-if="!$last"></md-divider>
-  </md-list>
-    <h1>Résultats</h1>
-    <p>Si tu as participé à l'activité Gestion'air, retrouve tes résultats en scannant le QR-Code <md-icon md-svg-src="images/icons/qrcode.svg"></md-icon> de ton ticket!</p>
+<p>Venez tester vos compétences de gestion et de langues le
+  <strong>{{$root.nextEvent.dates}} à {{$root.nextEvent.name}}, <i>{{$root.nextEvent.location}}</i></strong></p>
+<h1>Entraînement</h1>
+<p>Ecoutez un appel téléphonique et redirigez la personne vers le bon département.</p>
+<div layout="row" layout-align="space-around center">
+  <md-button analytics-on aria-label="jouer" ng-disabled="audio.gameState=='answering'" class="md-accent md-raised" ng-click="audio.nextQuestion()">Jouer</md-button>
+  <span ng-if="audio.gameState=='answering'"><md-icon  md-svg-src="images/icons/Speaker_Icon.svg"></md-icon> Quel département?</span>
+  <span flex></span>
+  <p class="answer correct" ng-show="audio.gameState=='result' && audio.correct">Correct Bravo!</p>
+  <p class="answer wrong" ng-show="audio.gameState=='result' && !audio.correct">Désolé faux!</p>
+  <span flex></span>
+  <p>Score {{audio.correctCount}} / {{audio.done.length}}</p>
+</div>
+<md-list>
+  <md-list-item analytics-on analytics-event="Answer" analytics-category="Game" analytics-label="{{dep.name}}" ng-disabled="audio.gameState!='answering'"
+    ng-repeat-start="dep in main.api.departments | orderBy: dep.number">
+    <md-checkbox aria-label="{{dep.name}}" ng-disabled="audio.gameState!='answering'" ng-change="audio.answerQuestion(dep.number)"
+      ng-model="dep.answer"></md-checkbox>
+    {{dep.name}}
+  </md-list-item>
+  <md-divider ng-repeat-end ng-if="!$last"></md-divider>
+</md-list>
+<br/>
+<h1>Résultats</h1>
+<p>Si tu as participé à l'activité Gestion'air, retrouve tes résultats en scannant le QR-Code
+  <md-icon md-svg-src="images/icons/qrcode.svg"></md-icon> de ton ticket!</p>
 
 
-  <p style="text-align:center;padding-top: 2em;"><img src="images/words.gif" alt="words" style="width: 50%" /></p>
+<p style="text-align:center;padding-top: 2em;"><img src="images/words.gif" alt="words" style="width: 50%" /></p>

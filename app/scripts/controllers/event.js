@@ -8,7 +8,7 @@
  * Controller of the gestionairApp
  */
 angular.module('gestionairApp')
-  .controller('EventCtrl', function ($scope, api) {
+  .controller('EventCtrl', function ($scope, api, $rootScope) {
     var $ctrl = this;
     $ctrl.events = [];
     api.getEvents().then(function(res){
@@ -33,6 +33,10 @@ angular.module('gestionairApp')
                 e.dates = start_date.getDate() + '.' + smonth + '.' + start_date.getFullYear();
             }
             $ctrl.events.push(e);
+            //quick hack to display next event on main
+            if (i === 0) {
+              $rootScope.nextEvent = e;
+            }
         }
     });
   });

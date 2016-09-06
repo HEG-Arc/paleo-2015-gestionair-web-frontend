@@ -35,8 +35,9 @@
 </div></div><div id="Tpl2_Racine_Contenu_Tbl_Sep_Droite">&nbsp;</div><div id="Tpl2_Racine_Contenu_Tbl_ZoneInfo"><div id="Tpl2_Racine_Contenu_Tbl_ZoneInfo_Texte_GES">
 
 <!-- RIGHT SIDEBAR -->
-
-<p><img alt="" src="images/side.jpg" style="width:100%"></p>
+<p>
+	<slideshow images="['images/side/side1.jpg','images/side/side2.jpg','images/side/side3.jpg']" duration="5000"></slideshow>
+</p>
 <h1>Prochaine session</h1>
 <div ng-controller="EventCtrl as $ctrl" ng-cloak="">
 	<h4 ng-repeat="e in $ctrl.events"><b>{{e.dates}}</b> {{e.name}} <i>{{e.location}}</i></h4>
@@ -128,6 +129,7 @@ gestion@he-arc.ch</h4>
         <script src="scripts/controllers/audio.js"></script>
 		<script src="scripts/controllers/event.js"></script>
 		<script src="scripts/controllers/stats.js"></script>
+		<script src="scripts/directives/slideshow.js"></script>
         <!-- endbuild -->
 <script type="text/javascript">
 

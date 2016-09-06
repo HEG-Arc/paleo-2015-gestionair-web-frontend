@@ -13,7 +13,7 @@ angular.module('gestionairApp')
 
         $http.get('/api/stats').then(function(response){
             $ctrl.statsList = response.data;
-            $ctrl.dates = $ctrl.statsList.map(function(d){ return d.stats_date})
+            $ctrl.dates = $ctrl.statsList.map(function(d){ return d.stats_date;});
             $ctrl.currentIndex = $ctrl.dates.indexOf($routeParams.date);
             if ($routeParams.date) {
                 loadStats($routeParams.date);

@@ -37,11 +37,15 @@ md-card > img {
 }
 
 .answer.wrong{
-    color: #dc1616;
+    background-color: #dc1616 !important;
+    color: white !important;
+    padding: 6px 60px;
 }
 
 .answer.correct{
-    color: #338800;
+    background-color: #338800 !important;
+    color: white !important;
+    padding: 6px 60px;
 }
 
 
@@ -299,4 +303,35 @@ videogular{
       padding-top: 0 !important;
     }
 
+}
+
+.slideshow{
+  position: relative;
+}
+
+.slideshow .fade{
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.fade.ng-hide-remove, .fadein.ng-hide-remove{
+  transition: 1.5s linear all;
+  opacity: 0;
+}
+
+.fade.ng-hide-remove-active, .fadein.ng-hide-remove-active {
+  opacity: 1;
+}
+
+.fade.ng-hide-add{
+  transition: 1.5s linear all;
+  opacity: 1;
+}
+
+.fade.ng-hide-add-active {
+  opacity: 0;
 }
