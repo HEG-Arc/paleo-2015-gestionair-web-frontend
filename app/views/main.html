@@ -10,7 +10,7 @@
   <p class="answer correct" ng-show="audio.gameState=='result' && audio.correct">Correct Bravo!</p>
   <p class="answer wrong" ng-show="audio.gameState=='result' && !audio.correct">Désolé faux!</p>
   <span flex></span>
-  <p>Score {{audio.correctCount}} / {{audio.done.length}}</p>
+  <p style="margin-right: 10px">Score {{audio.correctCount}} / {{audio.done.length}}</p>
 </div>
 <md-list>
   <md-list-item analytics-on analytics-event="Answer" analytics-category="Game" analytics-label="{{dep.name}}" ng-disabled="audio.gameState!='answering'"
