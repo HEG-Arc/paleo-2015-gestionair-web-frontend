@@ -7,7 +7,7 @@
 <h1 md-mode="indeterminate" ng-if="!$ctrl.data">loading</h1>
 <md-content id="stats" ng-if="$ctrl.data">
     <div class="page">
-        <header layout="row">
+        <header layout="row" layout-xs="column">
             <h1>Gestionair</h1>
             <span flex></span>
             <img id="logo" src="images/logo_arc_gestion.jpg">
@@ -15,7 +15,7 @@
         <h1>{{$ctrl.data.event.name}}</h1>
         <h2>Statistiques du {{$ctrl.data.day}}</h2>
 
-        <div layout="row">
+        <div layout="row" layout-xs="column">
             <div flex style="padding:0">
                 <h4>Fréquentation</h4>
                 <canvas id="attendance" class="chart chart-bar" chart-data="$ctrl.attendance.data" chart-labels="$ctrl.attendance.labels"
@@ -24,7 +24,7 @@
                 <p>Au total il y a eu <b>{{$ctrl.attendance.total}}</b> visiteurs</p>
             </div>
             <div flex="5" style="padding:0"></div>
-            <div flex="30" style="padding:0">
+            <div flex="30" style="padding:0" flex-xs="100">
                 <h4>Fidélisation</h4>
                 <br/>
                 <table id="retention">
@@ -53,7 +53,7 @@
 
         </div>
 
-        <div layout="row">
+        <div layout="row" layout-xs="column">
             <div flex style="padding:0">
                 <h4>Gains</h4>
                 <div style="position: relative">
@@ -73,14 +73,14 @@
         </div>
     </div>
     <div class="page">
-        <header layout="row">
+        <header layout="row" layout-xs="column">
             <h1>Gestionair</h1>
             <span flex></span>
             <img id="logo" src="images/logo_arc_gestion.jpg">
         </header>
         <h1>{{$ctrl.data.event.name}}</h1>
         <h2>Stock restant {{$ctrl.data.current_time | date:'dd.MM @ HH:mm'}}</h2>
-        <div layout="row">
+        <div layout="row" layout-xs="column">
             <div flex style="padding:0">
                 <h4>Par quantité</h4>
                 <!-- should be a component -->

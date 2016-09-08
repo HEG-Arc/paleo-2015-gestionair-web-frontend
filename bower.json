@@ -10,7 +10,7 @@
     "angular-route": "^1.4.7",
     "angular-sanitize": "^1.4.7",
     "angular-touch": "^1.4.7",
-    "angular-material": "~0.10.0",
+    "angular-material": "^1.1.0",
     "angulartics": "~0.19.0",
     "videogular": "~1.2.4",
     "videogular-angulartics": "~1.2.4",
