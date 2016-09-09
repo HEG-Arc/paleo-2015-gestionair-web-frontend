@@ -224,13 +224,23 @@ videogular{
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
+
+#retention {
+  width: 100%;
+}
+
 #retention th {
   text-align: left;
-  font-weight: normal;
+  font-weight: bold;
+  vertical-align: top;
 }
 
 #retention td {
   text-align: right;
+}
+
+#retention i {
+  font-size: 80%;
 }
 
 .inventory {

@@ -30,23 +30,55 @@
                 <table id="retention">
                     <tr>
                         <th>Enregistré:</th>
-                        <td>{{$ctrl.data.stats.retention.register}}</td>
                         <td></td>
+                        <td>{{$ctrl.data.stats.retention.register}}</td>
+                        <td><i>100.00%</i></td>
+                    </tr>
+                    <tr>
+                        <th>Jouée:</th>
+                        <td>
+                            0:<br/>
+                            1:<br/>
+                            2:<br/>
+                            3:<br/>
+                            4:<br/>
+                            5:
+                        </td>
+                        <td>
+                            {{$ctrl.data.stats.answers['0']}}<br/>
+                            {{$ctrl.data.stats.answers['1']}}<br/>
+                            {{$ctrl.data.stats.answers['2']}}<br/>
+                            {{$ctrl.data.stats.answers['3']}}<br/>
+                            {{$ctrl.data.stats.answers['4']}}<br/>
+                            {{$ctrl.data.stats.answers['5']}}
+                        </td>
+                        <td>
+                            <i>{{$ctrl.data.stats.answers['0']/$ctrl.data.stats.retention.register*100|number:2}}%</i><br/>
+                            <i>{{$ctrl.data.stats.answers['1']/$ctrl.data.stats.retention.register*100|number:2}}%</i><br/>
+                            <i>{{$ctrl.data.stats.answers['2']/$ctrl.data.stats.retention.register*100|number:2}}%</i><br/>
+                            <i>{{$ctrl.data.stats.answers['3']/$ctrl.data.stats.retention.register*100|number:2}}%</i><br/>
+                            <i>{{$ctrl.data.stats.answers['4']/$ctrl.data.stats.retention.register*100|number:2}}%</i><br/>
+                            <i>{{$ctrl.data.stats.answers['5']/$ctrl.data.stats.retention.register*100|number:2}}%</i>
+                        </td>
                     </tr>
                     <tr>
                         <th>Fini:</th>
+                        <td></td>
                         <td>{{$ctrl.data.stats.retention.limit}}</td>
-                        <td>({{$ctrl.data.stats.retention.limit/$ctrl.data.stats.retention.register*100|number:2}}% )</td>
+                        <td><i>{{$ctrl.data.stats.retention.limit/$ctrl.data.stats.retention.register*100|number:2}}%</i></td>
                     </tr>
                     <tr>
                         <th>Scanné:</th>
-                        <td>{{$ctrl.data.stats.retention.scan}}</td>
-                        <td>({{$ctrl.data.stats.retention.scan/$ctrl.data.stats.retention.limit*100|number:2}}% ) </td>
+                        <td></td>
+                        <td>{{$ctrl.data.stats.retention.scan}}<br/><i>%/enregistré</i></td>
+                        <td><i>{{$ctrl.data.stats.retention.scan/$ctrl.data.stats.retention.limit*100|number:2}}%</i><br/>
+                            <i>{{$ctrl.data.stats.retention.scan/$ctrl.data.stats.retention.register*100|number:2}}%</i></td>
                     </tr>
                     <tr>
                         <th>Debloqué:</th>
+                        <td></td>
                         <td>{{$ctrl.data.stats.retention.unlocked}}</td>
-                        <td>({{$ctrl.data.stats.retention.unlocked/$ctrl.data.stats.retention.scan*100|number:2}}% )</td>
+                        <td><i>{{$ctrl.data.stats.retention.unlocked/$ctrl.data.stats.retention.scan*100|number:2}}%</i></td>
                     </tr>
                 </table>
             </div>

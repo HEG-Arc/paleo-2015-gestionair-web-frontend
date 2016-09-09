@@ -3,6 +3,7 @@
   "private": true,
   "devDependencies": {
     "connect-modrewrite": "^0.9.0",
+    "bower-npm-resolver": "^0.5.1",
     "grunt": "^1.0.1",
     "grunt-angular-templates": "^1.1.0",
     "grunt-autoprefixer": "^3.0.4",
@@ -10,7 +11,7 @@
     "grunt-connect-proxy": "^0.2.0",
     "grunt-contrib-clean": "^1.0.0",
     "grunt-contrib-concat": "^1.0.1",
-    "grunt-contrib-connect": "~1.0.2",
+    "grunt-contrib-connect": "^1.0.2",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-cssmin": "^1.0.2",
     "grunt-contrib-htmlmin": "^2.0.0",
@@ -30,8 +31,8 @@
     "jshint-stylish": "^2.2.1",
     "karma-jasmine": "*",
     "karma-phantomjs-launcher": "*",
-    "time-grunt": "^1.0.0",
-    "bower-npm-resolver": "^0.5.1"
+    "serve-static": "^1.11.1",
+    "time-grunt": "^1.0.0"
   },
   "engines": {
     "node": ">=0.10.0"
