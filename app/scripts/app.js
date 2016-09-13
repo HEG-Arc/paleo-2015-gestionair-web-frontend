@@ -16,7 +16,6 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch',
     'ngMaterial',
     'angulartics',
     'angulartics.google.analytics',
