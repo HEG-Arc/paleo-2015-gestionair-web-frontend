@@ -21,7 +21,7 @@
                 <canvas id="attendance" class="chart chart-bar" chart-data="$ctrl.attendance.data" chart-labels="$ctrl.attendance.labels"
                     chart-options="$ctrl.attendance.options" chart-dataset-override="$ctrl.attendance.datasetOverride">
                 </canvas>
-                <p>Au total il y a eu <b>{{$ctrl.attendance.total}}</b> visiteurs</p>
+                <p>Au total il y a eu <b>{{$ctrl.attendance.total|number}}</b> visiteurs aujourd'hui. Et un total de <b>{{$ctrl.data.event.attendance|number}}</b> depuis le début de la manifestation.</p>
             </div>
             <div flex="5" style="padding:0"></div>
             <div flex="30" style="padding:0" flex-xs="100">
